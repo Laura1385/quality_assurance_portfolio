@@ -50,11 +50,11 @@ Actual result:
 The link redirects to a non-existing page or returns an error.
 
 Environment:
-OS: macOS Ventura 13.7.8 (22H730)
-Website: KDE.org
-Version: latest available at observation date
-Observation date: 2026-01-14
-Language: English
+- OS: macOS Ventura 13.7.8 (22H730)
+- Website: KDE.org
+- Version: latest available at observation date
+- Observation date: 2026-01-14
+- Language: English
 
 Severity:
 Medium
