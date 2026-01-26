@@ -1,4 +1,4 @@
-Biot January,13 2025 
+Biot (FR), 2026-01-13
 
 # QA Portfolio – KDE Bug Triaging
 
