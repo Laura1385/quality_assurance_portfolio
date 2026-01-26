@@ -73,14 +73,9 @@ While analyzing the Italian version of the KDE website, specifically the support
 
 I then compared the Italian page with the English version and with other localized versions of the same page. This comparison revealed a recurring pattern: section titles are translated into the selected language, while the paragraph content remains in English regardless of the localization.
 
-The consistent behavior across multiple languages indicates that the page structure supports localization, while the main content is either not included in the standard localization flow or managed separately. No indication such as “page being translated” or similar notices is currently provided to the user.
-
-Based on these observations, the case was not classified as a bug, but rather as a potential localization or content communication issue, pending further clarification.
-
+As part of the investigation, I verified in the project’s issue tracking system that the issue had already been reported.  
+Therefore, no additional report was created.
 
 ### Summary of QA Reasoning
 While reviewing the localized versions of the KDE website, I observed that section titles were translated while paragraph content consistently remained in English across multiple languages.  
-Before classifying this behavior as a bug, I evaluated its consistency and scope from a QA perspective.  
-The recurring and systematic pattern indicated that the behavior was unlikely to be an isolated defect.  
-This case helped me distinguish between internationalization (i18n) and localization (l10n): the website correctly supports multiple languages at a structural level, while the actual content localization appears to be partial.  
-This analysis illustrates the importance of cautious interpretation and context evaluation during bug triaging.
+I assessed the consistency and scope of this behavior and confirmed that the issue had already been reported.
