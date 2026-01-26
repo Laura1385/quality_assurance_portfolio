@@ -79,3 +79,13 @@ Therefore, no additional report was created.
 ### Summary of QA Reasoning
 While reviewing the localized versions of the KDE website, I observed that section titles were translated while paragraph content consistently remained in English across multiple languages.  
 I assessed the consistency and scope of this behavior and confirmed that the issue had already been reported.
+
+## 7. Further QA Findings (Website Content Issue)
+
+While reviewing the Italian version of the KDE Human Interface Guidelines page (https://develop.kde.org/it/hig/), I observed a content inconsistency compared to the English version.
+
+At the bottom of the page, in the section inviting users to “read the guidelines,” the Italian version refers to interactive boxes that are not displayed, while the corresponding section in the English version correctly shows the intended navigation elements.
+
+This results in missing navigation content on the localized page and negatively impacts usability.
+
+Before submitting a new issue, a check against existing reports is required to avoid duplication.
