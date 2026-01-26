@@ -69,17 +69,18 @@ Reason for triaging:
 The issue is easily reproducible and directly impacts user navigation, although it does not block core functionality. The bug is not related to external systems and contains sufficient information to be confirmed and properly classified.
 
 ## 6. QA Reasoning and Investigation Notes
-While analyzing the Italian version of the KDE website, specifically the support section, I noticed that some sections were displayed in English (https://kde.org/it/support/). Before classifying this behavior as a bug, I considered the possibility of an intentional partial localization.
+While analyzing the Italian version of the KDE website, specifically the support section (https://kde.org/it/support/), I noticed that some sections were displayed in English. Before classifying this behavior as a bug, I considered the possibility of an intentional partial localization.
 
 I then compared the Italian page with the English version and with other localized versions of the same page. This comparison revealed a recurring pattern: section titles are translated into the selected language, while the paragraph content remains in English regardless of the localization.
 
-This consistent behavior across multiple languages suggests that the page structure supports translation, but that the main content is either not included in the standard localization flow or is handled separately.
+The consistent behavior across multiple languages indicates that the page structure supports localization, while the main content is either not included in the standard localization flow or managed separately. No indication such as “page being translated” or similar notices is currently provided to the user.
 
-Based on this analysis, the case was not classified as a bug, but rather as a possible localization strategy or user communication issue, pending further clarification. No indication such as “page being translated” or similar notes is currently provided to the user. 
+Based on these observations, the case was not classified as a bug, but rather as a potential localization or content communication issue, pending further clarification.
+
 
 ### Summary of QA Reasoning
 While reviewing the localized versions of the KDE website, I observed that section titles were translated while paragraph content consistently remained in English across multiple languages.  
 Before classifying this behavior as a bug, I evaluated its consistency and scope from a QA perspective.  
-The recurring and systematic pattern suggested that the behavior was unlikely to be an isolated defect.  
-In the absence of clear indications that this behavior represented a violation of expected functionality, the issue was not reported as a bug.  
-This case illustrates the importance of cautious interpretation and context evaluation during bug triaging.
+The recurring and systematic pattern indicated that the behavior was unlikely to be an isolated defect.  
+This case helped me distinguish between internationalization (i18n) and localization (l10n): the website correctly supports multiple languages at a structural level, while the actual content localization appears to be partial.  
+This analysis illustrates the importance of cautious interpretation and context evaluation during bug triaging.
