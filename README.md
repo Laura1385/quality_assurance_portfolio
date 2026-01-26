@@ -14,4 +14,8 @@ The projects included here aim to demonstrate:
   Analysis and application of bug triaging guidelines within the KDE open-source ecosystem.  
   → `KDE_Bug_Triaging.md`
 
+- **KDE Kate – QA Portfolio Project**  
+  Manual QA project focused on functional analysis, test design, execution, and bug reporting on the KDE Kate text editor.  
+  → `KDE_Kate_QA_Portfolio/`
+
 More projects may be added over time.
