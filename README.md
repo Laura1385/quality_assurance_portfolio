@@ -19,3 +19,10 @@ The projects included here aim to demonstrate:
   → `KDE_Kate_QA_Portfolio/`
 
 More projects may be added over time.
+
+## Tooling & Environment Setup
+
+For QA practice purposes, I installed and configured Squash TM locally
+(Java 21, PostgreSQL via Docker).
+
+The detailed installation notes are maintained separately as internal documentation.
