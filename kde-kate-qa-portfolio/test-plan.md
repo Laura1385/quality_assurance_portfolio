@@ -58,3 +58,15 @@ Testing is considered complete when:
 - All planned test cases have been executed
 - Test results have been recorded
 - Identified issues have been documented and refined
+
+---
+
+## Traceability – Feature to Test Cases
+
+Feature: Language selection in Kate UI
+
+| Feature area | Test Case ID | Test Type |
+|-------------|-------------|-----------|
+| Access language settings | TC-SMOKE-01 | Smoke |
+| Change UI language | TC-HAPPY-01 | Happy Path |
+| Dropdown scroll behavior | TC-EDGE-01 | Edge / Negative |
