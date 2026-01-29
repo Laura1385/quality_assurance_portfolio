@@ -1,0 +1,34 @@
+# Test Cases edge negative – Kate Language Selection
+(What happens when things go wrong or are unusual?)- Resiste/Non si rompe
+
+## TC-EDGE-01 – Language dropdown does not scroll when list exceeds visible area
+
+### Preconditions
+- Kate is installed and launches correctly
+- Language settings are accessible
+- The list of available languages exceeds the visible dropdown area
+
+### Steps
+1. Launch Kate
+2. Open **Settings → Configure Language…**
+3. Open the **Primary Language** dropdown
+4. Attempt to scroll the dropdown list:
+   - Use mouse wheel / trackpad scrolling
+   - Use keyboard navigation (Down Arrow / PageDown)
+5. Try to reach languages that are not initially visible in the list
+
+### Expected Result
+- The dropdown list scrolls correctly when the number of languages exceeds the visible area
+- The user can reach and select any language in the list
+- No UI elements become unresponsive or inaccessible
+
+### Actual Result
+- The dropdown list does **not scroll**
+- Languages beyond the visible area cannot be reached or selected
+
+### Notes
+- Behavior is **intermittent**:
+  - In some attempts, the dropdown scrolls as expected
+  - In other attempts, scrolling is not possible and items beyond the visible area cannot be reached
+- Issue reproducible after multiple launches of Kate
+- UI responsiveness varies depending on interaction timing
