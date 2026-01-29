@@ -71,3 +71,4 @@ Feature: Language selection in Kate UI
 | Access language settings | TC-SMOKE-01-GH | Smoke | -----------|
 | Change UI language | TC-HAPPY-01 | Happy Path | -----------|
 | Dropdown scroll behavior | TC-EDGE-01 | Edge / Negative | Intermittent behavior observed |
+| Dropdown scroll behavior | TC-EXP-01 | Exploratory | Intermittent behavior observed, conditions not yet isolated |
