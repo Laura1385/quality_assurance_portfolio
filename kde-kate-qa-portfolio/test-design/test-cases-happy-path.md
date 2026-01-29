@@ -1,7 +1,7 @@
-# Test Cases – Kate Language Selection
+# Test Cases happy path – Kate Language Selection
+(Can the user complete the main flow correctly?)- Funziona
 
 ## TC-HAPPY-01 – Change UI language (dropdown scroll)
-
 **Type:** Happy Path  
 **Priority:** High  
 **Related area:** Settings → Language
@@ -12,15 +12,14 @@
 - Settings menu is accessible
 
 ### Steps (User)
-1. In Kate, open **Settings → Configure Language…**
-2. Locate **Primary Language**.
-3. Open the **Primary Language dropdown**.
+1. Lauch Kate
+2. Open **Settings → Configure Language…**
+3. Open the **Primary Language** dropdown
 4. If the list is longer than the visible area, attempt to **scroll** inside the dropdown
    - Use mouse wheel / trackpad scroll
    - (Optional) Use keyboard navigation (Down arrow / PageDown)
 5. Select a language that is **not currently selected** (e.g., Danish).
-6. Confirm / apply changes (if an Apply/OK button is present).
-7. Info Message appear
+6. Click OK to confirm the language change.
 
 ### Expected Result (What system does)
 - The dropdown list **scrolls correctly** when languages exceed the visible area.
