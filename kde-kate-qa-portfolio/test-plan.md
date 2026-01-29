@@ -65,8 +65,9 @@ Testing is considered complete when:
 
 Feature: Language selection in Kate UI
 
-| Feature area | Test Case ID | Test Type |
-|-------------|-------------|-----------|
-| Access language settings | TC-SMOKE-01 | Smoke |
-| Change UI language | TC-HAPPY-01 | Happy Path |
-| Dropdown scroll behavior | TC-EDGE-01 | Edge / Negative |
+| Feature area | Test Case ID | Test Type | Notes |
+|-------------|-------------|-----------|-----------|
+| Access language settings | TC-SMOKE-01 | Smoke | -----------|
+| Access language settings | TC-SMOKE-01-GH | Smoke | -----------|
+| Change UI language | TC-HAPPY-01 | Happy Path | -----------|
+| Dropdown scroll behavior | TC-EDGE-01 | Edge / Negative | Intermittent behavior observed |
