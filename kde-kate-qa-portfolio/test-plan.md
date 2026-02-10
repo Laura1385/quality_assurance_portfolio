@@ -65,12 +65,28 @@ Testing is considered complete when:
 
 Feature: Language selection in Kate UI
 
+| Feature area                        | Test Case ID    | Test Type       |
+|-------------------------------------|-----------------|-----------------|
+| Access language settings            | TC-SMOKE-01     | Smoke           | 
+| Access language settings            | TC-SMOKE-01-GH  | Smoke (Gherkin) | 
+| Change UI language                  | TC-HAPPY-01     | Happy Path      | 
+| Language persistence after restart  | TC-HAPPY-02     | Happy Path      | 
+| Cancel language change              | TC-HAPPY-03     | Happy Path      | 
+| Dropdown scroll behavior            | TC-EDGE-01      | Edge / Negative | 
+| Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | 
+
+---
+
+## Draft / Notes (pre-refinement)
+
+Feature: Language selection in Kate UI
+
 | Feature area                        | Test Case ID    | Test Type       | Notes      |
 |-------------------------------------|-----------------|-----------------|------------|
 | Access language settings            | TC-SMOKE-01     | Smoke           | -----------|
-| Access language settings            | TC-SMOKE-01-GH  | Smoke           | -----------|
+| Access language settings            | TC-SMOKE-01-GH  | Smoke (Gherkin) | -----------|
 | Change UI language                  | TC-HAPPY-01     | Happy Path      | -----------|
 | Language persistence after restart  | TC-HAPPY-02     | Happy Path      | -----------|
-| Cancel language change              | TC-HAPPY-03     | Happy Path.     | -----------|
+| Cancel language change              | TC-HAPPY-03     | Happy Path      | -----------|
 | Dropdown scroll behavior            | TC-EDGE-01      | Edge / Negative | Intermittent behavior observed |
 | Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | Intermittent behavior observed, conditions not yet isolated |
