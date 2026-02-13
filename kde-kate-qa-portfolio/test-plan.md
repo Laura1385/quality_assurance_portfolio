@@ -82,6 +82,24 @@ Feature: Language selection in Kate UI
 
 ---
 
+## Test Inventory – Language Selection Feature
+
+| ID            | Title                                           | Type         | Priority | Feature Area        |
+|---------------|------------------------------------------------|-------------|----------|---------------------|
+| TC-SMOKE-01   | Access language settings                       | Smoke        | High     | Settings → Language |
+| TC-HAPPY-01   | Change UI language                             | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-02   | Language persists after restart                | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-03   | Cancel language change                         | Happy Path   | Medium   | Settings → Language |
+| TC-HAPPY-04   | Add fallback language                          | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-05   | Remove fallback language                       | Happy Path   | Medium   | Settings → Language |
+| TC-HAPPY-06   | Suppress restart confirmation message          | Happy Path   | Medium   | Settings → Language |
+| TC-HAPPY-07   | Restore default language                       | Happy Path   | Medium   | Settings → Language |
+| TC-EDGE-01    | Dropdown scroll instability                    | Edge         | Medium   | Settings → Language |
+| TC-EDGE-02    | Fallback identical to Primary not persisted    | Edge         | Medium   | Settings → Language |
+| TC-EXP-01     | Dropdown scroll behavior investigation         | Exploratory  | N/A      | Settings → Language |
+
+---
+
 ## Draft / Notes (for Phase 3 – Execution & Bug Analysis)
 
 Feature: Language selection in Kate UI
