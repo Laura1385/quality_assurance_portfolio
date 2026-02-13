@@ -31,7 +31,7 @@ The following areas are explicitly excluded from this test plan:
 The following test types are planned:
 - **Smoke tests** – basic validation of the feature availability
 - **Happy path tests** – standard user flows
-- **Edge / Negative tests** – boundary conditions and abnormal behaviors
+- **Edge tests** – boundary conditions and abnormal behaviors
 
 ---
 
@@ -72,7 +72,7 @@ Feature: Language selection in Kate UI
 | Change UI language                  | TC-HAPPY-01     | Happy Path      | 
 | Language persistence after restart  | TC-HAPPY-02     | Happy Path      | 
 | Cancel language change              | TC-HAPPY-03     | Happy Path      | 
-| Dropdown scroll behavior            | TC-EDGE-01      | Edge / Negative | 
+| Dropdown scroll behavior            | TC-EDGE-01      | Edge            | 
 | Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | 
 
 ---
@@ -88,5 +88,5 @@ Feature: Language selection in Kate UI
 | Change UI language                  | TC-HAPPY-01     | Happy Path      | -----------|
 | Language persistence after restart  | TC-HAPPY-02     | Happy Path      | -----------|
 | Cancel language change              | TC-HAPPY-03     | Happy Path      | -----------|
-| Dropdown scroll behavior            | TC-EDGE-01      | Edge / Negative | Intermittent behavior observed |
+| Dropdown scroll behavior            | TC-EDGE-01      | Edge            | Intermittent behavior observed |
 | Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | Intermittent behavior observed, conditions not yet isolated |
