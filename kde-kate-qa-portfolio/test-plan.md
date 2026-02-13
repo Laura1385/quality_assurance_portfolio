@@ -65,28 +65,29 @@ Testing is considered complete when:
 
 Feature: Language selection in Kate UI
 
-| Feature area                        | Test Case ID    | Test Type       |
-|-------------------------------------|-----------------|-----------------|
-| Access language settings            | TC-SMOKE-01     | Smoke           | 
-| Access language settings            | TC-SMOKE-01-GH  | Smoke (Gherkin) | 
-| Change UI language                  | TC-HAPPY-01     | Happy Path      | 
-| Language persistence after restart  | TC-HAPPY-02     | Happy Path      | 
-| Cancel language change              | TC-HAPPY-03     | Happy Path      | 
-| Dropdown scroll behavior            | TC-EDGE-01      | Edge            | 
-| Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | 
+| Feature area                                | Test Case ID    | Test Type       |
+|---------------------------------------------|-----------------|-----------------|
+| Access language settings                    | TC-SMOKE-01     | Smoke           | 
+| Access language settings                    | TC-SMOKE-01-GH  | Smoke (Gherkin) | 
+| Change UI language                          | TC-HAPPY-01     | Happy Path      | 
+| Language persistence after restart          | TC-HAPPY-02     | Happy Path      | 
+| Cancel language change                      | TC-HAPPY-03     | Happy Path      |
+| Add fallback language                       | TC-HAPPY-04     | Happy Path      |
+| Remove fallback language                    | TC-HAPPY-05     | Happy Path      |
+| Suppress restart confirmation message       | TC-HAPPY-06     | Happy Path      |
+| Restore default language                    | TC-HAPPY-07     | Happy Path      | 
+| Dropdown scroll behavior                    | TC-EDGE-01      | Edge            | 
+| Fallback identical to Primary not persisted | TC-EDGE-02      | Edge            |
+| Dropdown scroll behavior investigation      | TC-EXP-01       | Exploratory     |
 
 ---
 
-## Draft / Notes (pre-refinement)
+## Draft / Notes (for Phase 3 – Execution & Bug Analysis)
 
 Feature: Language selection in Kate UI
 
-| Feature area                        | Test Case ID    | Test Type       | Notes      |
-|-------------------------------------|-----------------|-----------------|------------|
-| Access language settings            | TC-SMOKE-01     | Smoke           | -----------|
-| Access language settings            | TC-SMOKE-01-GH  | Smoke (Gherkin) | -----------|
-| Change UI language                  | TC-HAPPY-01     | Happy Path      | -----------|
-| Language persistence after restart  | TC-HAPPY-02     | Happy Path      | -----------|
-| Cancel language change              | TC-HAPPY-03     | Happy Path      | -----------|
-| Dropdown scroll behavior            | TC-EDGE-01      | Edge            | Intermittent behavior observed |
-| Dropdown scroll behavior            | TC-EXP-01       | Exploratory     | Intermittent behavior observed, conditions not yet isolated |
+| Feature area                               | Test Case ID   | Test Type     | Notes |
+|--------------------------------------------|---------------|--------------|-------|
+| Dropdown scroll behavior                   | TC-EDGE-01    | Edge         | Intermittent scroll issue observed in both Primary and Fallback dropdowns. Conditions not fully isolated. |
+| Dropdown scroll behavior investigation     | TC-EXP-01     | Exploratory  | Intermittent behavior observed; further investigation required to isolate root cause. |
+| Fallback identical to Primary not persisted| TC-EDGE-02    | Edge         | Fallback identical to Primary is not persisted after restart; restart message still displayed. Design intent unclear. |
