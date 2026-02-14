@@ -2,31 +2,38 @@ Biot (FR), 2026-01-26
 
 # QA Portfolio – KDE Kate Analysis
 
-## 1. Context and Feature
-Environnment: 
+## 1. Project Context
+
+### Environment
 - Host OS: macOS Ventura 13.7.8 (22H730)
 - Virtualization: UTM (QEMU)
 - Guest OS: Kubuntu 26.04 (snapshot, Dec 2025)
+- Application: Kate
+- Version tested: 25.12.1
 - Observation date: 2026-01-20
-- Language: English
+- UI Language: English
 
-Application: Kate (KDE text editor)
-Feature: Language selection in Kate
+---
 
+## 2. Feature Analysis
+
+# The Language Selection
+
+### Description
 The language selection feature allows the user to change the UI language of Kate.
 This impacts menus, labels, dialogs, and other textual elements of the application.
 
-Expected scope:
+### Expected Scope
 - Menus, dialogs, and settings UI labels should reflect the selected language.
 - The language change should be applied either immediately or after restart, depending on the intended design (to be clarified).
 
-Context: The user changes Kate’s UI language via the Settings menu.
-This feature supports international users and impacts usability and accessibility of the application.
+### Context
+The user changes Kate’s UI language via the Settings menu.
+This feature supports international users and impacts usability and accessibility.
 
-## 2. Happy path
-Main flow:
+### Happy Path – Main Flow
 1. User opens Kate.
-2. User navigates to Settings → Configure Language...
+2. User navigates to Settings → Configure Language…
 3. A dropdown list of available languages is displayed in Primary Language menu.
 4. If the list exceeds the visible area, the user can navigate the list (e.g., scrolling).
 5. The user selects a language.
@@ -51,3 +58,5 @@ Main flow:
 - No UI elements become unreachable.
 - The user can navigate the list via keyboard when applicable.
 - Navigation does not freeze the UI or unexpectedly lose focus.
+
+## 3. Accessibility Considerations (Future Extension)
