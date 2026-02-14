@@ -1,8 +1,8 @@
 ## KDE Kate – QA Portfolio Project
 
-This project is a hands-on QA portfolio exercise focused on **manual testing, functional analysis, and bug reporting** applied to a real open-source application: **Kate (KDE text editor)**.
+This project documents a structured QA process applied to **Kate (KDE text editor)**.
 
-The goal of this project is to demonstrate a **structured QA workflow**, from feature analysis to bug identification and documentation, acting as an external QA contributor within the KDE ecosystem.
+It focuses on manual testing, functional analysis, and bug reporting, covering the workflow from feature analysis to test execution and defect documentation.
 
 ### Scope of the project
 
@@ -45,3 +45,10 @@ During test execution, a **UI failure** was identified related to the language s
 - Ability to analyze software behavior beyond “happy paths”
 - Clear distinction between analysis, test design, and execution
 - Professional bug documentation aligned with open-source practices
+
+
+### Future Extensions
+
+- Accessibility considerations related to language switching
+  (screen readers compatibility, keyboard navigation, UI scaling behavior)
+- Potential expansion to additional Kate features
