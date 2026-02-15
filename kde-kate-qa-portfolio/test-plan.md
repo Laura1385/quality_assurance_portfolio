@@ -36,12 +36,13 @@ The following test types are planned:
 ---
 
 ## 4. Test Environment
-- Operating System: Kubuntu 26.04 (Snapshot – Dec 2025)
-- Execution environment: Virtual Machine
-- Virtualization tool: UTM
-- Desktop environment: KDE Plasma
-- Application under test: Kate (KDE text editor)
-- Language: English
+- Host OS: macOS Ventura 13.7.8
+- Virtualization Tool: UTM (QEMU)
+- Guest OS: Kubuntu 26.04 (Snapshot – Dec 2025)
+- Desktop Environment: KDE Plasma
+- Application Under Test: Kate
+- Version: 25.12.1
+- UI Language: English
 
 ---
 
