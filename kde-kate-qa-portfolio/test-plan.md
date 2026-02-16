@@ -27,11 +27,13 @@ The following areas are explicitly excluded from this test plan:
 
 ---
 
-## 3. Test Types
-The following test types are planned:
-- **Smoke tests** – basic validation of the feature availability
-- **Happy path tests** – standard user flows
-- **Edge tests** – boundary conditions and abnormal behaviors
+## 3. Test Strategy
+Testing of the Language Selection feature is performed using a combination of structured and exploratory approaches:
+
+- **Smoke testing** is used to verify basic accessibility of the feature and confirm that the configuration screen is reachable.
+- **Happy path testing** validates standard user workflows and expected behavior under normal conditions.
+- **Edge testing** evaluates boundary conditions and abnormal scenarios that may affect stability or consistency.
+- **Exploratory testing** is conducted when unexpected or unstable behavior is observed during execution of structured test cases, in order to investigate root causes and identify interaction-dependent issues.
 
 ---
 
@@ -86,18 +88,18 @@ Feature: Language selection in Kate UI
 ## Test Inventory – Language Selection Feature
 
 | ID            | Title                                           | Type         | Priority | Feature Area        |
-|---------------|------------------------------------------------|-------------|----------|---------------------|
-| TC-SMOKE-01   | Access language settings                       | Smoke        | High     | Settings → Language |
-| TC-HAPPY-01   | Change UI language                             | Happy Path   | High     | Settings → Language |
-| TC-HAPPY-02   | Language persists after restart                | Happy Path   | High     | Settings → Language |
-| TC-HAPPY-03   | Cancel language change                         | Happy Path   | Medium   | Settings → Language |
-| TC-HAPPY-04   | Add fallback language                          | Happy Path   | High     | Settings → Language |
-| TC-HAPPY-05   | Remove fallback language                       | Happy Path   | Medium   | Settings → Language |
-| TC-HAPPY-06   | Suppress restart confirmation message          | Happy Path   | Low      | Settings → Language |
-| TC-HAPPY-07   | Restore default language                       | Happy Path   | Medium   | Settings → Language |
-| TC-EDGE-01    | Dropdown scroll instability                    | Edge         | Medium   | Settings → Language |
-| TC-EDGE-02    | Fallback identical to Primary not persisted    | Edge         | Medium   | Settings → Language |
-| TC-EXP-01     | Dropdown scroll behavior investigation         | Exploratory  | Medium   | Settings → Language |
+|---------------|-------------------------------------------------|--------------|----------|---------------------|
+| TC-SMOKE-01   | Access language settings                        | Smoke        | High     | Settings → Language |
+| TC-HAPPY-01   | Change UI language                              | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-02   | Language persists after restart                 | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-03   | Cancel language change                          | Happy Path   | Medium   | Settings → Language |
+| TC-HAPPY-04   | Add fallback language                           | Happy Path   | High     | Settings → Language |
+| TC-HAPPY-05   | Remove fallback language                        | Happy Path   | Medium   | Settings → Language |
+| TC-HAPPY-06   | Suppress restart confirmation message           | Happy Path   | Low      | Settings → Language |
+| TC-HAPPY-07   | Restore default language                        | Happy Path   | Medium   | Settings → Language |
+| TC-EDGE-01    | Dropdown scroll instability                     | Edge         | Medium   | Settings → Language |
+| TC-EDGE-02    | Fallback identical to Primary not persisted     | Edge         | Medium   | Settings → Language |
+| TC-EXP-01     | Dropdown scroll behavior investigation          | Exploratory  | Medium   | Settings → Language |
 
 ---
 
@@ -105,8 +107,8 @@ Feature: Language selection in Kate UI
 
 Feature: Language selection in Kate UI
 
-| Feature area                               | Test Case ID   | Test Type     | Notes |
-|--------------------------------------------|---------------|--------------|-------|
-| Dropdown scroll behavior                   | TC-EDGE-01    | Edge         | Intermittent scroll issue observed in both Primary and Fallback dropdowns. Conditions not fully isolated. |
-| Dropdown scroll behavior investigation     | TC-EXP-01     | Exploratory  | Intermittent behavior observed; further investigation required to isolate root cause. |
-| Fallback identical to Primary not persisted| TC-EDGE-02    | Edge         | Fallback identical to Primary is not persisted after restart; restart message still displayed. Design intent unclear. |
+| Feature area                               | Test Case ID   | Test Type    | Notes |
+|--------------------------------------------|----------------|--------------|-------|
+| Dropdown scroll behavior                   | TC-EDGE-01     | Edge         | Intermittent scroll issue observed in both Primary and Fallback dropdowns. Conditions not fully isolated. |
+| Dropdown scroll behavior investigation     | TC-EXP-01      | Exploratory  | Intermittent behavior observed; further investigation required to isolate root cause. |
+| Fallback identical to Primary not persisted| TC-EDGE-02     | Edge         | Fallback identical to Primary is not persisted after restart; restart message still displayed. Design intent unclear. |
