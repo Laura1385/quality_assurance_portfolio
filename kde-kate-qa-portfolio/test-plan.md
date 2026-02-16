@@ -35,6 +35,16 @@ Testing of the Language Selection feature is performed using a combination of st
 - **Edge testing** evaluates boundary conditions and abnormal scenarios that may affect stability or consistency.
 - **Exploratory testing** is conducted when unexpected or unstable behavior is observed during execution of structured test cases, in order to investigate root causes and identify interaction-dependent issues.
 
+### Test Case Naming Convention
+
+Test cases follow this format:
+TC-[TYPE]-[SHORT-DESCRIPTION]-[SEQUENTIAL NUMBER]
+
+Where:
+- TYPE: SM (Smoke), HP (Happy Path), ED (Edge), EXP (Exploratory)
+- SHORT-DESCRIPTION: concise functional identifier
+- SEQUENTIAL NUMBER: incremental identifier within the same type
+
 ---
 
 ## 4. Test Environment
