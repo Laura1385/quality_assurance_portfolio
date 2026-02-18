@@ -81,7 +81,6 @@ Feature: Language selection in Kate UI
 | Feature area                                | Test Case ID                          | Test Type       |
 |---------------------------------------------|---------------------------------------|-----------------|
 | Access language settings                    | TC-SM-AccessSettings-01               | Smoke           | 
-| Access language settings                    | TC-SM-AccessSettings-GH-01            | Smoke (Gherkin) | 
 | Change UI language                          | TC-HP-ChangeUILang-01                 | Happy Path      | 
 | Language persistence after restart          | TC-HP-PersistAfterRestart-02          | Happy Path      | 
 | Cancel language change                      | TC-HP-CancelChange-03                 | Happy Path      |
