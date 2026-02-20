@@ -89,7 +89,7 @@ Feature: Language selection in Kate UI
 | Suppress restart confirmation message       | TC-HP-SuppressRestartMsg-06           | Happy Path      |
 | Restore default language                    | TC-HP-RestoreDefault-07               | Happy Path      | 
 | Fallback identical to Primary not persisted | TC-ED-FallbackEqualsPrimary-02        | Edge            |
-| Dropdown scroll behavior investigation      | TC-EXP-DropdownScroll-01              | Exploratory     |
+| Language dropdown scroll behavior           | TC-EXP-DropdownScroll-01              | Exploratory     |
 
 ### Deprecated Test Cases
 
@@ -110,6 +110,6 @@ Feature: Language selection in Kate UI
 | TC-HP-SuppressRestartMsg-06          | Suppress restart confirmation message           | Happy Path   | Low      | Settings → Language |
 | TC-HP-RestoreDefault-07              | Restore default language                        | Happy Path   | Medium   | Settings → Language |
 | TC-ED-FallbackEqualsPrimary-02       | Fallback identical to Primary not persisted     | Edge         | Medium   | Settings → Language |
-| TC-EXP-DropdownScroll-01             | Dropdown scroll behavior investigation          | Exploratory  | Medium   | Settings → Language |
+| TC-EXP-DropdownScroll-01             | Language dropdown scroll behavior               | Exploratory  | Medium   | Settings → Language |
 
 ---
