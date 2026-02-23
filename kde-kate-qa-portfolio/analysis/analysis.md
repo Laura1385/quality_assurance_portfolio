@@ -59,4 +59,12 @@ This feature supports international users and impacts usability and accessibilit
 - The user can navigate the list via keyboard when applicable.
 - Navigation does not freeze the UI or unexpectedly lose focus.
 
+### Configuration Storage – Restart Confirmation Suppression
+The "Do not show this message again" preference is stored in:
+
+~/.config/katerc
+
+Modifying or removing the corresponding configuration entry restores the restart confirmation dialog upon the next language change
+This was verified during HP6 execution (PRE update baseline).
+
 ## 3. Accessibility Considerations (Future Extension)
