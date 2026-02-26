@@ -10,15 +10,15 @@ Jira Bug ID: SCRUM-3
 - Date of observation: 2026-02-16
 - Environment: Kubuntu 26.04 (Snapshot – Dec 2025)
 - Kate Version: 25.12.1
-- Reproducibility: the dropdown scroll issue is consistently reproducible when using mouse wheel interaction.
+- Reproducibility: the dropdown scroll issue is consistently reproducible on first dialog opening (mouse wheel / trackpad).
 
 ### Smoke Execution History
 - Execution #1: Failed  
   Dropdown list does not allow mouse scroll, preventing selection of languages outside visible area.
 
 - Execution #2: Passed (with workaround)  
-  Language successfully selected using keyboard letter navigation.  
-  The dropdown becomes responsive once keyboard interaction is triggered.
+  Language successfully selected (via keyboard type-to-select or mouse click).
+  Scroll becomes responsive only on the second opening of the dialog (close & reopen).
 
 Known issue tracked in Jira: SCRUM-3
 Functional test execution continued to assess overall feature impact despite the known issue.
@@ -31,6 +31,9 @@ Evidence available in:
 
 ## Step A – Kate-only Update
 
+Execution date: 2026-02-26
+Environment: Kate 25.12.1 → 25.12.2 (isolated upgrade)
+
 Action:
 - Update Kate package/version only using:
   sudo apt install --only-upgrade kate
@@ -39,12 +42,10 @@ Purpose:
 - Determine whether the issue is caused by the Kate application itself.
 
 Outcome:
-- (To be documented after test execution)
+- Kate-only upgrade does not resolve the issue.
 
 Clarification (behavior trigger):
-- During post-update execution, the trigger was clarified:
-  scroll becomes available on the second dialog opening (close & reopen),
-  not necessarily after a selection interaction.
+- Scroll becomes available on the second dialog opening (after closing and reopening the dialog), independently of any selection interaction.
 
 ---
 
@@ -63,5 +64,5 @@ Outcome:
 
 ### Current Status
 
-The issue remains reproducible in the pre-update baseline environment.
+The issue remains reproducible in both the pre-update baseline environment and after the isolated Kate-only upgrade.
 Further investigation will determine whether the root cause lies in system-level components or within the Kate application itself.
