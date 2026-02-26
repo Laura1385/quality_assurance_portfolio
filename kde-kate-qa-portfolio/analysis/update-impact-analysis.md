@@ -41,6 +41,11 @@ Purpose:
 Outcome:
 - (To be documented after test execution)
 
+Clarification (behavior trigger):
+- During post-update execution, the trigger was clarified:
+  scroll becomes available on the second dialog opening (close & reopen),
+  not necessarily after a selection interaction.
+
 ---
 
 ## Step B – System Update (excluding Kate)
