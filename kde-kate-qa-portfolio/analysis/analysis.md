@@ -67,4 +67,13 @@ The "Do not show this message again" preference is stored in:
 Modifying or removing the corresponding configuration entry restores the restart confirmation dialog upon the next language change
 This was verified during HP6 execution (PRE update baseline).
 
+## Known Issue Identified During Testing
+During structured and exploratory testing activities, a defect was identified in the Language Selection feature.
+On the first opening of the Configure Language dialog, the dropdown list does not allow scrolling (mouse wheel / trackpad), limiting access to items outside the visible area.
+Scrolling becomes available only after closing and reopening the dialog.
+
+The issue is documented and tracked in Jira: SCRUM-3.
+
+---
+
 ## 3. Accessibility Considerations (Future Extension)
