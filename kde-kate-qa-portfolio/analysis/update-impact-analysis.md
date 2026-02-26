@@ -29,29 +29,30 @@ Evidence available in:
 
 ---
 
-## Step A – System Update (excluding Kate)
+## Step A – Kate-only Update
 
 Action:
-- Update system packages (excluding Kate).
+- Update Kate package/version only using:
+  sudo apt install --only-upgrade kate
 
 Purpose:
-- Determine whether the issue is caused by system components (e.g., Qt, KDE libraries) rather than Kate itself.
+- Determine whether the issue is caused by the Kate application itself.
 
 Outcome:
-- To be documented after execution.
+- (To be documented after test execution)
 
 ---
 
-## Step B – Kate Update
+## Step B – System Update (excluding Kate)
 
 Action:
-- Update Kate package/version.
+- Update remaining system packages while keeping Kate version fixed.
 
 Purpose:
-- Verify whether the issue is resolved in a newer application version.
+- Determine whether the issue is caused by system components (Qt, KDE libraries, etc.).
 
 Outcome:
-- To be documented after execution.
+- (To be documented after execution)
 
 ---
 
