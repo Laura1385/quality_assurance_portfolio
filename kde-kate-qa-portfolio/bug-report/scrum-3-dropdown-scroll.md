@@ -18,7 +18,7 @@ Also reproduced on Kate 25.12.2 (post isolated application upgrade)
 2. Open **Settings → Configure Language…**
 3. Open **Primary Language** dropdown (first opening in this dialog session)
 4. Try to scroll with mouse wheel / trackpad 
-5. Close the **Primary Language** dropdown
+5. Click outside the **Primary Language** dropdown to close it
 6. Reopen **Primary Language** dropdown again and try to scroll
 7. Close Kate
 8. Launch Kate
@@ -26,7 +26,7 @@ Also reproduced on Kate 25.12.2 (post isolated application upgrade)
 10. Click on **Add Fallback Language**
 11. Open **Fallback Language** dropdown (first opening in this dialog session)
 12. Try to scroll with mouse wheel / trackpad 
-13. Close the **Fallback Language** dropdown
+13. Click outside the **Fallback Language** dropdown to close it
 14. Reopen **Fallback Language** dropdown again and try to scroll
 
 ## Expected result:
