@@ -16,21 +16,18 @@ Also reproduced on Kate 25.12.2 (post isolated application upgrade)
 ## Steps to reproduce :
 1. Launch Kate
 2. Open **Settings → Configure Language…**
-3. Open Primary Language dropdown (first opening in this dialog session)
+3. Open **Primary Language** dropdown (first opening in this dialog session)
 4. Try to scroll with mouse wheel / trackpad 
-5. Close the **Configure Language** dialog
-6. Reopen **Settings → Configure Language…**
-7. Open Primary Language dropdown again and try to scroll
-8. Close Kate
-9. Launch Kate
-10. Open **Settings → Configure Language…**
-11. Click on **Add Fallback Language**
-12. Open **Fallback Language dropdown** (first opening in this dialog session)
-13. Try to scroll with mouse wheel / trackpad 
-14. Close the **Configure Language** dialog
-15. Reopen **Settings → Configure Language…**
-16. Click on **Add Fallback Language**
-17. Open **Fallback Language dropdown** again and try to scroll
+5. Close the **Primary Language** dropdown
+6. Reopen **Primary Language** dropdown again and try to scroll
+7. Close Kate
+8. Launch Kate
+9. Open **Settings → Configure Language…**
+10. Click on **Add Fallback Language**
+11. Open **Fallback Language** dropdown (first opening in this dialog session)
+12. Try to scroll with mouse wheel / trackpad 
+13. Close the **Fallback Language** dropdown
+14. Reopen **Fallback Language** dropdown again and try to scroll
 
 ## Expected result:
 - The dropdown should allow scrolling on first opening of the dialog without requiring additional interaction.
