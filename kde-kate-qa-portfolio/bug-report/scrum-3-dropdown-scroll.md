@@ -1,0 +1,63 @@
+Biot (FR), 2026-02-26
+
+# Language dropdown does not scroll on first opening (scroll enabled only after dialog is reopened) – Primary & Fallback
+
+## 1. Environment
+Host OS: macOS Ventura 13.7.8 (22H730)
+Virtualization: UTM (QEMU)
+Guest OS: Kubuntu 26.04 (snapshot, Dec 2025)
+Application: Kate
+Version tested: 25.12.1
+UI Language: English
+Test date: 2026-02-15
+
+Also reproduced on Kate 25.12.2 (post isolated application upgrade)
+
+## Steps to reproduce :
+1. Launch Kate
+2. Open **Settings → Configure Language…**
+3. Open Primary Language dropdown (first opening in this dialog session)
+4. Try to scroll with mouse wheel / trackpad 
+5. Close the **Configure Language** dialog
+6. Reopen **Settings → Configure Language…**
+7. Open Primary Language dropdown again and try to scroll
+8. Close Kate
+9. Launch Kate
+10. Open **Settings → Configure Language…**
+11. Click on **Add Fallback Language**
+12. Open **Fallback Language dropdown** (first opening in this dialog session)
+13. Try to scroll with mouse wheel / trackpad 
+14. Close the **Configure Language** dialog
+15. Reopen **Settings → Configure Language…**
+16. Click on **Add Fallback Language**
+17. Open **Fallback Language dropdown** again and try to scroll
+
+## Expected result:
+- The dropdown should allow scrolling on first opening of the dialog without requiring additional interaction.
+
+## Actual result:
+- On first dialog opening in a session, the dropdown list does not scroll. Navigation is limited to visible entries and items outside the visible area are not reachable.
+- After closing and reopening the dialog, scrolling works normally.
+- After restarting the application, the issue reproduces again on the first dialog opening.
+
+## Impact:
+- Users cannot reach languages outside the visible area on first opening, which may can block language selection.
+
+## Reproducibility
+- Reproducible 100% on first dialog opening after each application restart.
+
+## Version tested
+- 25.12.1 (pre-update baseline)
+- 25.12.2 (post isolated application upgrade)
+
+## Update status
+Revalidated after isolated Kate-only upgrade (25.12.1 → 25.12.2).
+Issue persists unchanged.
+
+## Link Jira
+[SCRUM-3](https://lauraproto.atlassian.net/browse/SCRUM-3)
+
+## Discovery context:
+- Initially observed during execution of TC-SM-AccessSettings-01.
+- Further analyzed during exploratory session TC-EXP-DropdownScroll-01.
+- Same behavior observed in both Primary and Fallback dropdown.
