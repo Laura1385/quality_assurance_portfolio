@@ -64,3 +64,23 @@ Issue persists unchanged in all environments tested.
 - Initially observed during execution of TC-SM-AccessSettings-01.
 - Further analyzed during exploratory session TC-EXP-DropdownScroll-01.
 - Same behavior observed in both Primary and Fallback dropdown.
+
+## Bugzilla Cross-Reference - KDE Bug 494931
+
+### Existing Report Identified
+During investigation, the observed behavior was compared against KDE Bugzilla.
+An existing report was identified:
+- **Bug ID:** 494931 (KDE Bugzilla)
+- **Product:** frameworks-kxmlgui  
+- **Summary:** Cannot scroll the languages list in "Configure language" dialog with the mouse wheel until the list is dismissed and then reopened  
+- **Status:** REPORTED  
+- **First reported:** 2024-10-17 
+
+### Behavioral Match
+The reproduced behavior is consistent with the Bugzilla report:
+- On first opening of the "Configure Language" dialog, the dropdown does not respond to mouse wheel scrolling.
+- After dismissing and reopening the dialog, scrolling works correctly.
+
+### Triage Decision
+No new bug report was created to avoid duplication.
+The issue is currently tracked under [KDE Bug 494931](https://bugs.kde.org/show_bug.cgi?id=494931)
