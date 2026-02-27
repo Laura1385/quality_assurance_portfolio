@@ -65,25 +65,24 @@ Issue persists unchanged in all environments tested.
 - Further analyzed during exploratory session TC-EXP-DropdownScroll-01.
 - Same behavior observed in both Primary and Fallback dropdown.
 
-## Bugzilla Cross-Reference - KDE Bug 494931
+## Bugzilla Cross-Reference - KDE Bug 471293 (master)
 
 ### Existing Report Identified
-During investigation, the observed behavior was compared against KDE Bugzilla.
-An existing report was identified:
-- **Bug ID:** 494931 (KDE Bugzilla)
-- **Product:** frameworks-kxmlgui  
-- **Summary:** Cannot scroll the languages list in "Configure language" dialog with the mouse wheel until the list is dismissed and then reopened  
-- **Status:** REPORTED  
-- **First reported:** 2024-10-17 
+During investigation, an existing report was identified in KDE Bugzilla:
+- **Bug ID:** 471293 (master)
+- **Product:** frameworks-kxmlgui
+- **Summary:** Language select dialog overflows display
+- **Status:** CONFIRMED
+- **Duplicates:** 462057, 497462, 503018
 
 ### Component Ownership
-Although the issue is reproduced in Kate, the Bugzilla entry is filed under **frameworks-kxmlgui**, indicating that the defect originates from the shared UI framework layer rather than the Kate application itself.
+Although the issue is reproduced in Kate, the Bugzilla entry is filed under **frameworks-kxmlgui** (KSwitchLanguageDialog), indicating a framework-level UI issue rather than an application-specific one.
 
 ### Behavioral Match
 The reproduced behavior is consistent with the Bugzilla report:
-- On first opening of the "Configure Language" dialog, the dropdown does not respond to mouse wheel scrolling.
-- After dismissing and reopening the dialog, scrolling works correctly.
+- Scroll controls / scrolling do not appear or work on first opening.
+- After closing/dismissing and reopening the list/dialog, scrolling becomes available.
 
 ### Triage Decision
 No new bug report was created to avoid duplication.
-The issue is currently tracked under [KDE Bug 494931](https://bugs.kde.org/show_bug.cgi?id=494931)
+The issue is tracked under [KDE Bug 471293](https://bugs.kde.org/show_bug.cgi?id=471293)
