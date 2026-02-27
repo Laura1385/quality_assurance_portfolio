@@ -11,7 +11,9 @@ Version tested: 25.12.1
 UI Language: English
 Test date: 2026-02-15
 
-Also reproduced on Kate 25.12.2 (post isolated application upgrade)
+Also reproduced on:
+- Kate 25.12.2 (post isolated application upgrade)
+- Kate 25.12.2 after full system upgrade (Kernel 6.19.0-6-generic)
 
 ## Steps to reproduce :
 1. Launch Kate
@@ -38,7 +40,7 @@ Also reproduced on Kate 25.12.2 (post isolated application upgrade)
 - After restarting the application, the issue reproduces again on the first dialog opening.
 
 ## Impact:
-- Users cannot reach languages outside the visible area on first opening, which may can block language selection.
+- Users cannot reach languages outside the visible area on first opening, which may block language selection.
 
 ## Reproducibility
 - Reproducible 100% on first dialog opening after each application restart.
@@ -46,10 +48,14 @@ Also reproduced on Kate 25.12.2 (post isolated application upgrade)
 ## Version tested
 - 25.12.1 (pre-update baseline)
 - 25.12.2 (post isolated application upgrade)
+- 25.12.2 (post full system upgrade – Kernel 6.19.0-6-generic)
 
 ## Update status
-Revalidated after isolated Kate-only upgrade (25.12.1 → 25.12.2).
-Issue persists unchanged.
+Revalidated after:
+- Isolated Kate-only upgrade (25.12.1 → 25.12.2)
+- Full system upgrade (Kernel 6.19.0-6-generic, Kate 25.12.2)
+
+Issue persists unchanged in all environments tested.
 
 ## Link Jira
 [SCRUM-3](https://lauraproto.atlassian.net/browse/SCRUM-3)
