@@ -29,8 +29,7 @@ Evidence available in:
 
 ---
 
-## Step A – Kate-only Update
-
+## Step 01 – Kate-only Update
 Execution date: 2026-02-26
 Environment: Kate 25.12.1 → 25.12.2 (isolated upgrade)
 
@@ -49,20 +48,32 @@ Clarification (behavior trigger):
 
 ---
 
-## Step B – System Update (excluding Kate)
+## Step 02 – Full System Update (excluding Kate)
+Execution date: 2026-02-27
+Environment: Full system upgrade (all packages updated)
 
 Action:
-- Update remaining system packages while keeping Kate version fixed.
+- Update all remaining system packages using:
+  sudo apt full-upgrade
 
 Purpose:
 - Determine whether the issue is caused by system components (Qt, KDE libraries, etc.).
 
 Outcome:
-- (To be documented after execution)
+- Full system upgrade does not resolve the issue.
+- Bug remains reproducible: scrolling is disabled on the first dialog opening and becomes available only after closing and reopening the dialog.
+
+Post-update environment:
+- Kate: 25.12.2
+- Kernel: 6.19.0-6-generic
 
 ---
 
 ### Current Status
+The issue remains reproducible after both:
+- Isolated Kate-only upgrade (25.12.1 → 25.12.2)
+- Full system upgrade (Kernel 6.19.0-6, Kate 25.12.2)
 
-The issue remains reproducible in both the pre-update baseline environment and after the isolated Kate-only upgrade.
-Further investigation will determine whether the root cause lies in system-level components or within the Kate application itself.
+Scrolling is disabled on the first dialog opening and becomes available only after closing and reopening the dialog.
+
+The behavior is consistent and reproducible.
