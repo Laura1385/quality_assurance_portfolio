@@ -1,0 +1,10 @@
+kate 25.12.2
+plasmashell 6.5.5
+Linux lau-standardpc 6.18.0-9-generic #9-Ubuntu SMP PREEMPT_DYNAMIC Mon Jan 12 16:49:02 UTC 2026 x86_64 GNU/Linux
+kate:
+  Installed: 4:25.12.2-0ubuntu1
+  Candidate: 4:25.12.2-0ubuntu1
+  Version table:
+ *** 4:25.12.2-0ubuntu1 500
+        500 http://archive.ubuntu.com/ubuntu resolute/universe amd64 Packages
+        100 /var/lib/dpkg/status
