@@ -76,6 +76,9 @@ An existing report was identified:
 - **Status:** REPORTED  
 - **First reported:** 2024-10-17 
 
+### Component Ownership
+Although the issue is reproduced in Kate, the Bugzilla entry is filed under **frameworks-kxmlgui**, indicating that the defect originates from the shared UI framework layer rather than the Kate application itself.
+
 ### Behavioral Match
 The reproduced behavior is consistent with the Bugzilla report:
 - On first opening of the "Configure Language" dialog, the dropdown does not respond to mouse wheel scrolling.
