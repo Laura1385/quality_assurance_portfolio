@@ -76,4 +76,27 @@ The issue is documented and tracked in Jira: SCRUM-3.
 
 ---
 
+## External Contribution – KDE Bug 471293
+
+During investigation of the dropdown scroll issue (SCRUM-3), an existing KDE Bugzilla entry was identified:
+
+- KDE Bug 471293 (frameworks-kxmlgui) – https://bugs.kde.org/show_bug.cgi?id=471293 
+- Product: frameworks-kxmlgui
+- Status: CONFIRMED
+
+After cluster analysis of related duplicate reports (462057, 497462, 503018), the issue was confirmed as reproducible in the current environment (Kubuntu 26.04, Kate 25.12.2, UTM virtual machine).
+
+A structured confirmation comment was submitted on 2026-03-01 to the existing bug report, including:
+
+- Updated 2026 environment details
+- Cross-platform context (Linux, Windows, Arch Linux)
+- Reproducibility after application restart
+- Post-update validation
+
+No new bug report was created to avoid duplication.
+
+This contribution reinforces the existing bug report with updated reproducibility data.
+
+---
+
 ## 3. Accessibility Considerations (Future Extension)
