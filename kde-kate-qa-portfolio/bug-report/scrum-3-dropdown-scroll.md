@@ -75,6 +75,16 @@ During investigation, an existing report was identified in KDE Bugzilla:
 - **Status:** CONFIRMED
 - **Duplicates:** 462057, 497462, 503018
 
+Multiple Bugzilla entries (e.g., 494931, 475437) describe partial manifestations of the same scroll initialization issue (mouse wheel not working, scroll arrows not visible, list not scrollable).
+
+The observed behavior in this project consolidates these symptoms into a single reproducible flow:
+- First dialog opening → scroll inactive
+- Dialog closed
+- Reopened → scroll active
+
+This suggests a common UI initialization defect.
+The issue is reproducible across multiple platforms according to Bugzilla entries (Windows, Arch Linux, Other Linux).
+
 ### Component Ownership
 Although the issue is reproduced in Kate, the Bugzilla entry is filed under **frameworks-kxmlgui** (KSwitchLanguageDialog), indicating a framework-level UI issue rather than an application-specific one.
 
