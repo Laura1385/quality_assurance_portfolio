@@ -2,7 +2,7 @@
 
 This project documents a structured QA process applied to **Kate (KDE text editor)**.
 
-It focuses on manual testing, functional analysis, and bug reporting, covering the workflow from feature analysis to test execution and defect documentation.
+It focuses on manual testing, functional analysis, and bug reporting, with a minimal automation layer added as a final validation step.
 
 ### Scope of the project
 
@@ -38,6 +38,7 @@ During test execution, a **UI failure** was identified related to the language s
 - `test-design/` – Manual test cases and traceability  
 - `bug-report/` – Bug description and refinement  
 - `evidence/` – Screenshots or notes collected during testing  
+- `automation/` –  Minimal pytest-based smoke automation validating application launch via CLI
 
 ### What this project demonstrates
 
