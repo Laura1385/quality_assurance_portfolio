@@ -16,6 +16,8 @@ The goal is not full UI automation, but rather to demonstrate:
 - Language: Python 3
 - Test runner: pytest
 
+Tests are intended to run inside the Kubuntu VM where Kate is installed.
+
 ---
 
 ## Scope
