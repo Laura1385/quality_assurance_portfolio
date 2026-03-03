@@ -28,12 +28,13 @@ This keeps the setup simple and stable in the VM environment.
 ---
 
 ## Project Structure
+```text
 automation/
 ├── tests/
-│ ├── test_basic.py
 │ └── test_kate_process.py
 ├── requirements.txt
 └── README.md
+```
 
 ---
 
