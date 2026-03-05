@@ -23,6 +23,9 @@ Biot (FR), 2026-01-26
 The language selection feature allows the user to change the UI language of Kate.
 This impacts menus, labels, dialogs, and other textual elements of the application.
 
+### Testing Focus
+Testing focused on the behavior of the language selection interface, particularly user interactions with the dropdown component and the configuration workflow.
+
 ### Expected Scope
 - Menus, dialogs, and settings UI labels should reflect the selected language.
 - The language change should be applied either immediately or after restart, depending on the intended design (to be clarified).
