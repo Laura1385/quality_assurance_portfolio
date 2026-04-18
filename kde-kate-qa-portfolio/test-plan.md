@@ -12,9 +12,8 @@ The scope includes:
 - Selection of a language from the list
 - Visual confirmation of the selected language
 
-Expected scope:
-Menus, dialogs, and settings UI labels should reflect the selected language
-(immediately or after restart, depending on design).
+Expected scope: 
+Menus, dialogs, and settings UI labels should reflect the selected language, either immediately or after restart depending on implementation.
 
 ---
 
