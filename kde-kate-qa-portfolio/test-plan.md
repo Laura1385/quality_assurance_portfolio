@@ -22,7 +22,6 @@ Menus, dialogs, and settings UI labels should reflect the selected language
 The following areas are explicitly excluded from this test plan:
 - System-wide language changes
 - Translation correctness or linguistic quality
-- Persistence of language settings after system reboot
 - Localization of plugins or external components
 
 ---
