@@ -59,6 +59,9 @@ Additional execution environment:
 - Same UTM virtual machine reused
 - Behavior consistent with original environment
 
+- Virtual machine resources on Apple Silicon:
+  - RAM: 6 GB (increased from initial configuration, 4 GB, to improve performance during test execution)
+
 ---
 
 ## 5. Entry Criteria
