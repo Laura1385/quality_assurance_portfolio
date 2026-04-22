@@ -42,7 +42,7 @@ The issue was reproduced in the testing environment and confirmed against an exi
 ### Tools and artifacts
 - Documentation: Markdown files within this repository
 - Test management: **SquashTM**
-- Test execution: Manual testing
+- Test execution: Manual testing (primary) and automated checks with **Robot Framework**
 - Internal bug tracking simulation: **Jira**
 - Bug tracking reference: **KDE Bugzilla** 
 - Bug reporting guidelines: **KDE guidelines**
@@ -52,7 +52,7 @@ The issue was reproduced in the testing environment and confirmed against an exi
 - `test-design/` – Manual test cases and traceability  
 - `bug-report/` – Bug description and refinement  
 - `evidence/` – Screenshots or notes collected during testing  
-- `automation/` –  Minimal smoke automation (pytest) validating application launch via CLI
+- `automation/` –  Minimal automation using Robot Framework to validate application launch
 
 ### What this project demonstrates
 - Practical QA thinking applied to a real application
