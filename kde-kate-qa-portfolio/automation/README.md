@@ -1,20 +1,19 @@
 # Automation Layer — KDE Kate QA Portfolio
 
 ## Objective
-This automation layer complements the manual QA workflow by introducing a minimal, structured smoke validation using Python and pytest.
+This automation layer complements the manual QA workflow by introducing a minimal, structured smoke validation using Robot Framework.
 
 The goal is not full UI automation, but rather to demonstrate:
-- Clean test structure with pytest
-- Process-level validation of application launch
-- Separation between manual QA reasoning and automated checks
+- A clean and readable Robot Framework test structure
+- Basic smoke validation that Kate can be launched
+- A first automation layer that stays simple and stable in the VM environment
 
 ---
 
 ## Environment
 - OS: Kubuntu (UTM virtual machine)
 - Application under test: KDE Kate
-- Language: Python 3
-- Test runner: pytest
+- Automation framework: Robot Framework
 
 Tests are intended to run inside the Kubuntu VM where Kate is installed.
 
@@ -22,10 +21,10 @@ Tests are intended to run inside the Kubuntu VM where Kate is installed.
 
 ## Scope
 Current automated coverage includes:
-- Smoke validation that Kate can be launched via CLI
-- Process-level verification via CLI execution and system inspection
+- Smoke validation that Kate can be launched from the system
+- Process-level verification that a Kate process is running
 
-This keeps the setup simple and stable in the VM environment.
+This keeps the setup simple and stable before moving to UI-level automation.
 
 ---
 
@@ -33,7 +32,7 @@ This keeps the setup simple and stable in the VM environment.
 ```text
 automation/
 ├── tests/
-│ └── test_kate_process.py
+│ └── test_kate_process.robot
 ├── requirements.txt
 └── README.md
 ```
@@ -49,14 +48,20 @@ pip install -r requirements.txt
 
 ## Run Tests
 ```bash
-pytest -q
+robot test_kate_process.robot
 ```
 
 ---
 
+## Notes
+This first automated test does not interact with the Kate UI yet.
+It only verifies that the application can be started and detected as a running process.
+
+---
+
 ## Future Improvements
-- UI-level automation via accessibility layer (AT-SPI)
-- CI pipeline integration
+- UI-level automation via Linux desktop accessibility tooling
+- Better process cleanup after execution
 - Expanded functional coverage
 
 ---
