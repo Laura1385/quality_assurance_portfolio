@@ -54,6 +54,11 @@ Where:
 - Version: 25.12.1
 - UI Language: English
 
+Additional execution environment:
+- Host OS: macOS Tahoe 26.4.1 (Apple Silicon, MacBook Air 2026)
+- Same UTM virtual machine reused
+- Behavior consistent with original environment
+
 ---
 
 ## 5. Entry Criteria
