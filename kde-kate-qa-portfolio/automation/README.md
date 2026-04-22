@@ -11,6 +11,7 @@ The goal is not full UI automation, but rather to demonstrate:
 ---
 
 ## Environment
+- Host OS: macOS Tahoe 26.4.1 (Apple Silicon)
 - OS: Kubuntu (UTM virtual machine)
 - Application under test: KDE Kate
 - Automation framework: Robot Framework

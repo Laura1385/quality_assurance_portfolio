@@ -46,7 +46,7 @@ Where:
 ---
 
 ## 4. Test Environment
-- Host OS: macOS Ventura 13.7.8
+- Host OS: macOS Ventura 13.7.8 (Apple Intel)
 - Virtualization Tool: UTM (QEMU)
 - Guest OS: Kubuntu 26.04 (Snapshot – Dec 2025)
 - Desktop Environment: KDE Plasma
@@ -55,7 +55,7 @@ Where:
 - UI Language: English
 
 Additional execution environment:
-- Host OS: macOS Tahoe 26.4.1 (Apple Silicon, MacBook Air 2026)
+- Host OS: macOS Tahoe 26.4.1 (Apple Silicon)
 - Same UTM virtual machine reused
 - Behavior consistent with original environment
 
