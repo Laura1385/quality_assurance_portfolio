@@ -1,2 +1,11 @@
 .DS_Store
 Test-cases-happy-path_print.md
+
+# Python
+.venv/
+
+# Robot Framework output
+kde-kate-qa-portfolio/automation/results/
+*.log
+*.xml
+*.html

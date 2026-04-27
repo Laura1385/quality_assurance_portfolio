@@ -1,0 +1,4 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/kde-kate-qa-portfolio/automation/.venv/bin/python",
+  "python.terminal.activateEnvironment": true
+}
