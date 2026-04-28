@@ -62,12 +62,12 @@ source .venv/bin/activate
 robot -d results tests/test_kate_process.robot
 ```
 
-From the project root:
+From the project root (recommended to keep paths explicit):
 ```bash
 source kde-kate-qa-portfolio/automation/.venv/bin/activate
 robot -d kde-kate-qa-portfolio/automation/results kde-kate-qa-portfolio/automation/tests/test_kate_process.robot
 ```
-Tests are typically executed from the project root to keep paths explicit.
+
 ---
 
 ## Limitation

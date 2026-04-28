@@ -14,6 +14,7 @@ The project covers the following QA activities:
 - Structured bug reporting (expected vs actual, impact, reproducibility)
 
 Automation is **not the primary focus** of this project; the emphasis is on **test analysis, test design, and structured bug investigation** applied to a real application.
+The automated layer currently covers the smoke test TC-SM-AccessSettings-01, verifying that Kate can be launched and that the language configuration dialog can be reached.
 
 ### Feature under test
 - Application: **Kate (KDE)**
@@ -52,7 +53,7 @@ The issue was reproduced in the testing environment and confirmed against an exi
 - `test-design/` – Manual test cases and traceability  
 - `bug-report/` – Bug description and refinement  
 - `evidence/` – Screenshots or notes collected during testing  
-- `automation/` –  Minimal automation using Robot Framework to validate application launch
+- `automation/` –  Minimal Robot Framework automation covering the smoke test for accessing the language settings dialog
 
 ### What this project demonstrates
 - Practical QA thinking applied to a real application

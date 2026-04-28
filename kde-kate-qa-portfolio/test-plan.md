@@ -29,6 +29,7 @@ The following areas are explicitly excluded from this test plan:
 Testing of the Language Selection feature is performed using a combination of structured and exploratory approaches:
 
 - **Smoke testing** is used to verify basic accessibility of the feature and confirm that the configuration screen is reachable.
+The smoke test TC-SM-AccessSettings-01 is also covered by a minimal Robot Framework automation.
 - **Happy path testing** validates standard user workflows and expected behavior under normal conditions.
 - **Edge testing** evaluates boundary conditions and abnormal scenarios that may affect stability or consistency.
 - **Exploratory testing** is conducted when unexpected or unstable behavior is observed during execution of structured test cases, in order to investigate root causes and identify interaction-dependent issues.
