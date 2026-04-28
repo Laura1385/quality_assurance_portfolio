@@ -26,4 +26,13 @@ The Configure Language dialog exposed labels and controls.
 Dogtail was able to retrieve the Kate application object.
 
 ## Conclusion
-AT-SPI appears suitable for limited UI interaction, particularly for dialogs such as "Configure Language".
+AT-SPI can be used to inspect and interact with Kate UI elements, and basic interactions were successfully validated.
+
+However, the approach proved complex and fragile compared to standard web automation tools.
+
+For this reason, AT-SPI automation was not pursued further, and only a minimal proof-of-concept was kept to demonstrate feasibility.
+
+## Outcome
+- Feasibility validated
+- Minimal automation implemented (smoke level)
+- Approach not retained for further development
