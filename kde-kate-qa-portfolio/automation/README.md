@@ -11,7 +11,7 @@ The goal is not full UI automation, but rather to demonstrate:
 ---
 
 ## Environment
-- Host OS: macOS Ventura 13.7.8 (Apple Intel)
+- Host OS: macOS (Intel and Apple Silicon environments tested)
 - OS: Kubuntu (UTM virtual machine)
 - Application under test: KDE Kate
 - Automation framework: Robot Framework
@@ -22,10 +22,10 @@ Tests are intended to run inside the Kubuntu VM where Kate is installed.
 
 ## Scope
 Current automated coverage includes:
-- Smoke validation that Kate can be launched from the system
-- Process-level verification that a Kate process is running
+- Smoke validation that Kate can be launched
+- Basic UI interaction to access the "Configure Language" dialog via AT-SPI (dogtail), as a feasibility check
 
-This keeps the setup simple and stable before moving to UI-level automation.
+Automation is intentionally limited to a small exploratory scope to validate feasibility.
 
 ---
 
@@ -33,8 +33,15 @@ This keeps the setup simple and stable before moving to UI-level automation.
 ```text
 automation/
 ├── tests/
-│ └── test_kate_process.robot
+│   └── test_kate_process.robot
+├── libraries/
+│   └── kate_keywords.py
+├── resources/
+│   ├── Kate.resource
+│   └── CommonKate.resource
+├── results/
 ├── requirements.txt
+├── tool-spike-atspi.md
 └── README.md
 ```
 
@@ -42,27 +49,37 @@ automation/
 
 ## Setup
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 ## Run Tests
+From inside the automation/ folder:
 ```bash
-robot test_kate_process.robot
+cd kde-kate-qa-portfolio/automation
+source .venv/bin/activate
+robot -d results tests/test_kate_process.robot
 ```
 
+From the project root:
+```bash
+source kde-kate-qa-portfolio/automation/.venv/bin/activate
+robot -d kde-kate-qa-portfolio/automation/results kde-kate-qa-portfolio/automation/tests/test_kate_process.robot
+```
+Tests are typically executed from the project root to keep paths explicit.
 ---
 
-## Notes
-This first automated test does not interact with the Kate UI yet.
-It only verifies that the application can be started and detected as a running process.
+## Limitation
+Automation was explored using AT-SPI (dogtail) to validate feasibility on a Linux desktop application.
 
----
+While basic interactions were successfully automated, the approach proved complex and less stable compared to standard web automation.
 
-## Future Improvements
-- UI-level automation via Linux desktop accessibility tooling
-- Better process cleanup after execution
-- Expanded functional coverage
+For this reason, automation was intentionally kept minimal, as Linux desktop UI automation does not seem to be a commonly required skill in the QA job market.
+
+The main focus of this project remains on:
+- test design
+- manual testing
+- clear and structured documentation
 
 ---

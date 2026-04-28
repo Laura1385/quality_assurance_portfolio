@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation       TC-SM-AccessSettings-01 - Access language settings
-Resource           ../resources/Kate.resource 
+Resource            ../resources/Kate.resource 
 Resource            ../resources/CommonKate.resource 
 
 # Run test:
