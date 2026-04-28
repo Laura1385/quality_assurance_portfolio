@@ -1,12 +1,18 @@
 *** Settings ***
-Library    Process
+Documentation       TC-SM-AccessSettings-01 - Access language settings
+Resource           ../resources/Kate.resource 
+Resource            ../resources/CommonKate.resource 
 
 # Run test:
-# robot -d automation/results kde-kate-qa-portfolio/automation/tests/test_kate_process.robot
+# robot -d kde-kate-qa-portfolio/automation/results kde-kate-qa-portfolio/automation/tests/test_kate_process.robot
+
+# See log file:
+# chromium kde-kate-qa-portfolio/automation/results/log.html
 
 *** Test Cases ***
-Kate Process Starts
-    Start Process    kate    --new    /tmp/kate_smoke.txt    shell=False
-#Sleep    1s
-#${result}=    Run Process    pgrep    -af    kate    shell=False
-#Should Be Equal As Integers    ${result.rc}    0    msg=Kate process not found. stdout=${result.stdout} stderr=${result.stderr}
+Open Language Dialog
+    [Documentation]    Smoke test where the focus is on verifying that the feature is accessible.
+    [Tags]    Smoke
+    Open Kate
+    Open Configure Language
+    Close Kate
