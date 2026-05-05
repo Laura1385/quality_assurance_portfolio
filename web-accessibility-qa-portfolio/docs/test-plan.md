@@ -102,3 +102,11 @@ Testing is considered complete when:
 - identified issues have been documented and refined
 
 ---
+
+## Traceability Matrix 
+
+Feature: Keyboard compatibility
+
+| Test area                                   | Test Case ID                              | Test Type       |
+|---------------------------------------------|-------------------------------------------|-----------------|
+| Header keyboard navigation                  | TC-SM-Header-Keyboard-Accessibility-01    | Smoke           | 
