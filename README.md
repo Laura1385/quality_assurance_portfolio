@@ -16,7 +16,11 @@ The projects included here aim to demonstrate:
 
 - **KDE Kate – QA Portfolio Project**  
   Manual QA project focused on functional analysis, test design, execution, and bug reporting on the KDE Kate text editor.  
-  → `KDE_Kate_QA_Portfolio/`
+  → `kde-kate-qa-portfolio/`
+
+- **OpenCart - QA Portfolio Project (Web Accessibility)**
+  QA project focuesed on keyboard accessibility testing, including functional analysis, test design, execution, and bug reporting on a real e-commerce web application.
+  → `web-accessibility-qa-portfolio/`
 
 More projects may be added over time.
 
