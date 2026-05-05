@@ -110,3 +110,4 @@ Feature: Keyboard compatibility
 | Test area                                   | Test Case ID                              | Test Type       |
 |---------------------------------------------|-------------------------------------------|-----------------|
 | Header keyboard navigation                  | TC-SM-Header-Keyboard-Accessibility-01    | Smoke           | 
+| Currency menu interaction                   | TC-HP-Currency-Menu-Interaction-01        | Happy Path      |
