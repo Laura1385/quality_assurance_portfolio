@@ -109,5 +109,7 @@ Feature: Keyboard compatibility
 
 | Test area                                   | Test Case ID                              | Test Type       |
 |---------------------------------------------|-------------------------------------------|-----------------|
-| Header keyboard navigation                  | TC-SM-Header-Keyboard-Accessibility-01    | Smoke           | 
-| Currency menu interaction                   | TC-HP-Currency-Menu-Interaction-01        | Happy Path      |
+| Header keyboard navigation                  | TC-SM-HeaderKeyboardAccessibility-01      | Smoke           | 
+| Currency menu interaction                   | TC-HP-CurrencyMenuInteraction-01          | Happy Path      |
+| Telephone icon interaction                  | TC-HP-TelephoneIconInteraction-02         | Happy Path      |
+| My Account menu interaction                 | TC-HP-MyAccountMenuInteraction-03         | Happy Path      |
