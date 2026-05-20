@@ -103,6 +103,12 @@ Testing is considered complete when:
 
 ---
 
+## 11. Known Issues During Testing
+- Temporary interruptions of the demo website were observed during execution (HTTP Error 522).
+- The demo environment temporarily blocked repeated requests during testing activities (Cloudflare Error 1015).
+
+---
+
 ## Traceability Matrix 
 
 Feature: Keyboard compatibility
