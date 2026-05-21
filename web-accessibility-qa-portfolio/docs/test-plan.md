@@ -109,6 +109,29 @@ Testing is considered complete when:
 
 ---
 
+## 12. Additional Test Scenarios Identified
+- TC-ED-ContactFormValidation-XX – Invalid Contact Form Input
+- TC-ED-RegisterAccountFormValidation-XX – Invalid Register Account Form Input
+- TC-HP-ShoppingCartIconInteraction-XX – Open Shopping Cart with Product
+- TC-HP-CheckoutIconInteraction-XX – Access Checkout with Product
+- TC-HP-MyAccountMenuInteraction-XX – Login Page New Customer Navigation
+- TC-HP-MyAccountMenuInteraction-XX – Submit Returning Customer Form
+- TC-HP-MyAccountMenuInteraction-XX – Login Page Navigate Sidebar Links
+
+---
+
+## 13. Potential Issues Identified During Testing
+- Keyboard navigation flow becomes temporarily unclear before reaching the first product actions in the *Featured* section.
+Possible focus visibility issue near the homepage carousel/slideshow controls.
+
+- A PHP warning message related to the Wish List feature was observed after adding the first product to the Wish List.
+The warning persists after adding additional products.
+```text
+Warning: Undefined array key "stock_status" in /var/www/opencart.com/web/catalog/controller/account/wishlist.php on line 98
+```
+
+---
+
 ## Traceability Matrix 
 
 Feature: Keyboard compatibility
@@ -119,3 +142,8 @@ Feature: Keyboard compatibility
 | Currency menu interaction                   | TC-HP-CurrencyMenuInteraction-01          | Happy Path      |
 | Telephone icon interaction                  | TC-HP-TelephoneIconInteraction-02         | Happy Path      |
 | My Account menu interaction                 | TC-HP-MyAccountMenuInteraction-03         | Happy Path      |
+| Wish List icon interaction                  | TC-HP-WishListIconInteraction-04          | Happy Path      |
+| Shopping cart icon interaction              | TC-HP-ShoppingCartIconInteraction-05      | Happy Path      |
+| Checkout icon interaction                   | TC-HP-CheckoutIconInteraction-06          | Happy Path      |
+| Register account form                       | TC-HP-RegisterAccountFormInteraction-07   | Happy Path      |
+| Wish List page interaction                  | TC-HP-WishListPageInteraction-08          | Happy Path      |
