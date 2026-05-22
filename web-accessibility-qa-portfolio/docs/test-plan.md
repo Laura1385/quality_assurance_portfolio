@@ -136,14 +136,15 @@ Warning: Undefined array key "stock_status" in /var/www/opencart.com/web/catalog
 
 Feature: Keyboard compatibility
 
-| Test area                                   | Test Case ID                              | Test Type       |
-|---------------------------------------------|-------------------------------------------|-----------------|
-| Header keyboard navigation                  | TC-SM-HeaderKeyboardAccessibility-01      | Smoke           | 
-| Currency menu interaction                   | TC-HP-CurrencyMenuInteraction-01          | Happy Path      |
-| Telephone icon interaction                  | TC-HP-TelephoneIconInteraction-02         | Happy Path      |
-| My Account menu interaction                 | TC-HP-MyAccountMenuInteraction-03         | Happy Path      |
-| Wish List icon interaction                  | TC-HP-WishListIconInteraction-04          | Happy Path      |
-| Shopping cart icon interaction              | TC-HP-ShoppingCartIconInteraction-05      | Happy Path      |
-| Checkout icon interaction                   | TC-HP-CheckoutIconInteraction-06          | Happy Path      |
-| Register account form                       | TC-HP-RegisterAccountFormInteraction-07   | Happy Path      |
-| Wish List page interaction                  | TC-HP-WishListPageInteraction-08          | Happy Path      |
+| Test area                                   | Test Case ID                                  | Test Type       |
+|---------------------------------------------|-----------------------------------------------|-----------------|
+| Header keyboard navigation                  | TC-SM-HeaderKeyboardAccessibility-01          | Smoke           | 
+| Currency menu interaction                   | TC-HP-CurrencyMenuInteraction-01              | Happy Path      |
+| Telephone icon interaction                  | TC-HP-TelephoneIconInteraction-02             | Happy Path      |
+| My Account menu interaction                 | TC-HP-MyAccountMenuInteraction-03             | Happy Path      |
+| Wish List icon interaction                  | TC-HP-WishListIconInteraction-04              | Happy Path      |
+| Shopping cart icon interaction              | TC-HP-ShoppingCartIconInteraction-05          | Happy Path      |
+| Checkout icon interaction                   | TC-HP-CheckoutIconInteraction-06              | Happy Path      |
+| Register account form                       | TC-HP-RegisterAccountFormInteraction-07       | Happy Path      |
+| Wish List page interaction                  | TC-HP-WishListPageInteraction-08              | Happy Path      |
+| Featured section keyboard navigation        | TC-EXP-FeaturedProductKeyboardNavigation-01   | Exploratory     |
