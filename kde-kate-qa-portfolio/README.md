@@ -55,6 +55,22 @@ The issue was reproduced in the testing environment and confirmed against an exi
 - `evidence/` – Screenshots or notes collected during testing  
 - `automation/` –  Minimal Robot Framework automation covering the smoke test for accessing the language settings dialog
 
+### Project Roadmap
+
+```mermaid
+flowchart TD
+    A[QA Analysis & Test Planning]
+    --> B[Manual Test Design]
+
+    B --> C[Test Management & Documentation]
+
+    C --> D[Bug Investigation & Reporting]
+
+    D --> E[Accessibility & Desktop Automation Research]
+
+    E --> F[Automation Proof of Concept]
+```
+
 ### What this project demonstrates
 - Practical QA thinking applied to a real application
 - Ability to analyze software behavior beyond “happy paths”
