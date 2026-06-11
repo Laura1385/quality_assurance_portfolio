@@ -1,12 +1,12 @@
 *** Settings ***
-Documentation        ...
+Documentation        TC-SM-HeaderKeyboardAccessibility-01 - Keyboard navigation of header
 Library              SeleniumLibrary    
 
 # Run the script:
-# robot -d results/1_smoke tests/smoke/header_keyboard_accessibility.robot
+# robot -d web-accessibility-qa-portfolio/robot-framework/automation/results/1_smoke web-accessibility-qa-portfolio/robot-framework/automation/tests/smoke/header_keyboard_accessibility.robot
 
 # Run only the test with 'current' tag:
-# robot -d results -i XXXX tests/smoke   
+# robot -d results -i smoke1 tests/smoke   
 # after -i - first word after tag
 # "test" - the last word is the folder
 
@@ -15,5 +15,8 @@ Library              SeleniumLibrary
 
 *** Test Cases ***
 User can search for products
-    [Documentation]  1° Test: it open the Amazon site web and search a product
-    [Tags]  Smoke
+    [Documentation]  Smoke Test: it open the demo.opencart site web and verifying the keyboard accessibility of the header toolbar
+    [Tags]  smoke1
+
+    Go to                                   http://www.https://demo.opencart.com/
+    Wait Until Page Contains                id=top

@@ -1,5 +1,10 @@
 .DS_Store
-venv/
+
+# Python
+.venv/
 __pycache__/
 .pytest_cache/
 *.pyc
+
+# Robot Framework outputs
+results/
