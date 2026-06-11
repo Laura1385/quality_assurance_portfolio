@@ -14,3 +14,6 @@ Library              SeleniumLibrary
 
 
 *** Test Cases ***
+User can search for products
+    [Documentation]  1° Test: it open the Amazon site web and search a product
+    [Tags]  Smoke
