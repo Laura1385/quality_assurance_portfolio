@@ -15,7 +15,7 @@ Status: ✅ Completed
 - Exploratory testing activities
 - Validation of keyboard navigation behavior
 
-Status: 🔄 In Progress
+Status: ✅ Completed
 
 ---
 
@@ -28,12 +28,14 @@ Status: 🔄 In Progress
 
 ---
 
-## Phase 4 — Bug Reporting & Investigation
+## Phase 4 — Bug Reporting & Investigation (If Applicable)
 - Jira bug reporting workflow
 - Accessibility defect documentation
 - Investigation of keyboard navigation inconsistencies
 
-Status: ⏳ Planned
+This phase will be executed only if relevant defects are identified during testing activities.
+
+Status: 🔍 Conditional
 
 ---
 

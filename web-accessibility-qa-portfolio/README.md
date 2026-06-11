@@ -68,10 +68,10 @@ flowchart TD
 |-------------------------------|-------------------|
 | Test Plan                     | ✅ Completed      |  
 | Smoke Test Cases              | ✅ Completed      |
-| Happy Path Test Cases         | 🔄 In Progress    |
-| Exploratory Testing           | 🔄 In Progress    |
+| Happy Path Test Cases         | ✅ Completed      |
+| Exploratory Testing           | ✅ Completed      |
 | Squash TM Organization        | 🔄 In Progress    |
-| Jira Bug Reporting            | ⏳ Planned        |
+| Jira Bug Reporting            | 🔍 If Relevant Findings Emerge        |
 | Robot Framework + Selenium    | ⏳ Planned        |
 | GitHub Actions CI             | ⏳ Planned        |
 | Playwright UI Testing         | ⏳ Planned        |
