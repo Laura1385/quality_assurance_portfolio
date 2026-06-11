@@ -8,3 +8,6 @@ __pycache__/
 
 # Robot Framework outputs
 results/
+
+# VS Code local settings
+.vscode/settings.json
