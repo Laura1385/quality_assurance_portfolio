@@ -3,12 +3,16 @@ Biot (FR), 2026-04-28
 # Test Plan – Web Accessibility UI Automation Project
 
 ## 1. Project Objective
-Verify the Keyboard Compatibility, on selected user flows, of the https://demo.opencart.com/ site web.
+Verify keyboard compatibility on selected user flows of the local OpenCart web application.
 
 ---
 
 ## 2. Application Under Test
-The https://demo.opencart.com/ is a publicly available demo web application that represents a typical e-commerce application.
+The application under test is OpenCart, executed locally through a Docker-based environment.
+
+The original test design was based on the public OpenCart demo website. Due to temporary outages and Cloudflare blocking during repeated testing activities, the execution environment was migrated to a local OpenCart instance available at: 
+
+http://localhost:8888/
 
 ---
 
@@ -88,7 +92,7 @@ Where:
 
 ## 9. Entry Criteria
 Testing can start when:
-- the website https://demo.opencart.com/ is accessible
+- the local OpenCart Docker environment is running and accessible at http://localhost:8888/
 - the selected page is fully loaded
 - the selected browser is correctly installed and usable
 - it is possible to interact with the pages using the keyboard
@@ -104,8 +108,11 @@ Testing is considered complete when:
 ---
 
 ## 11. Known Issues During Testing
-- Temporary interruptions of the demo website were observed during execution (HTTP Error 522).
-- The demo environment temporarily blocked repeated requests during testing activities (Cloudflare Error 1015).
+During testing on the public OpenCart demo website, the following issues were observed:
+- Temporary interruptions of the demo website during execution (HTTP Error 522).
+- Temporary blocking of repeated requests during testing activities (Cloudflare Error 1015).
+
+These issues affected the stability and repeatability of test execution and motivated the migration to a local Docker-based OpenCart environment.
 
 ---
 
