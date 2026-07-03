@@ -1,0 +1,75 @@
+services:
+  # ==========================
+  # MySQL Database
+  # ==========================
+  opencart-db:
+    image: mysql:9.5
+    container_name: opencart-db
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Database initialization
+    environment:
+      MYSQL_DATABASE: opencart
+      MYSQL_ROOT_PASSWORD: rootroot
+
+    # Persist database data between container restarts
+    volumes:
+      - database_data:/var/lib/mysql
+    
+    # Wait until MySQL is ready
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ==========================
+  # OpenCart Application
+  # ==========================
+  opencart:
+    image: ghcr.io/aam-git/docker-opencart:latest
+    platform: linux/amd64
+    container_name: opencart-app
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Expose OpenCart on localhost
+    ports:
+      - "8888:80"
+
+    # Persist OpenCart data between container restarts
+    volumes:
+      - opencart_data:/var/www/html
+
+    # OpenCart installation and database connection settings
+    environment:
+      DB_HOSTNAME: opencart-db
+      DB_PORT: 3306
+      DB_DATABASE: opencart
+      DB_USERNAME: root
+      DB_PASSWORD: rootroot
+      DB_DRIVER: mysqli
+      DB_PREFIX: oc_
+      OPENCART_USERNAME: admin
+      OPENCART_PASSWORD: adminadmin
+      OPENCART_EMAIL: admin@example.com
+      OPENCART_FIRSTNAME: Admin
+      OPENCART_LASTNAME: User
+      OPENCART_SITE_NAME: Your Store
+      OPENCART_SITE_URL: http://localhost:8888
+      OPENCART_LANGUAGE: en-gb
+
+    # Start only when MySQL is healthy
+    depends_on:
+      opencart-db:
+        condition: service_healthy
+
+# ==========================
+# Docker Volumes
+# ==========================
+volumes:
+  database_data:
+  opencart_data:

@@ -43,6 +43,16 @@ The main validation focus includes:
 - `test-design/` → structured manual test cases
 - `README.md` → project overview, roadmap, and current status
 
+## Local Test Environment
+During the project, the public OpenCart demo website proved to be unreliable for automated testing.
+
+Repeated test executions were occasionally interrupted by Cloudflare protection and temporary service outages, making the execution of automated tests inconsistent.
+
+To provide a stable and repeatable test environment, the project was migrated to a local Docker-based OpenCart instance.
+
+The complete Docker setup is documented in:
+- `docs/docker-local-environment.md`
+
 ## Project Roadmap
 ```mermaid
 flowchart TD
@@ -70,9 +80,9 @@ flowchart TD
 | Smoke Test Cases              | ✅ Completed      |
 | Happy Path Test Cases         | ✅ Completed      |
 | Exploratory Testing           | ✅ Completed      |
-| Squash TM Organization        | 🔄 In Progress    |
+| Squash TM Organization        | ✅ Completed    |
 | Jira Bug Reporting            | 🔍 If Relevant Findings Emerge        |
-| Robot Framework + Selenium    | ⏳ Planned        |
+| Robot Framework + Selenium    | 🔄 In Progress        |
 | GitHub Actions CI             | ⏳ Planned        |
 | Playwright UI Testing         | ⏳ Planned        |
 | Playwright API Testing        | ⏳ Planned        |
