@@ -24,7 +24,7 @@ Status: ✅ Completed
 - Test execution management
 - Traceability between test areas and test cases
 
-Status: 🔄 In Progress
+Status: ✅ Completed
 
 ---
 
@@ -44,7 +44,7 @@ Status: 🔍 Conditional
 - Selenium interaction workflows
 - Reusable automation structure
 
-Status: ⏳ Planned
+Status: 🔄 In Progress
 
 ---
 
