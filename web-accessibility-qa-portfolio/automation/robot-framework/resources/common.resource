@@ -8,7 +8,7 @@ ${BROWSER}     chrome
 *** Keywords ***
 # Configure Selenium execution parameters
 Initialize Selenium
-    Set Selenium Speed        .2s               #adds a pause after each command
+    Set Selenium Speed        .1s               #adds a pause after each command
     Set Selenium Timeout      10s               #set how long to wait before failing
 
 # Open the application before each test
@@ -21,6 +21,7 @@ Begin Web Test
 End Web Test
     Close Browser
 
+
 # Move the keyboard focus through a list using Tab.
 Navigate To Element Horizontal
     [Arguments]    ${target_element}    @{elements}
@@ -31,6 +32,7 @@ Navigate To Element Horizontal
             BREAK
         END
     END
+
 
 # Move the keyboard focus through a list using Arrow Down.
 Navigate To Element Arrow Down
@@ -43,14 +45,21 @@ Navigate To Element Arrow Down
         END
     END
 
+
 # Check whether the target element currently has focus.
 # "Run Keyword And Return Status" converts the result of a verification keyword 
 # into True/False instead of failing the test immediately.
 Is Element Focused
     [Arguments]    ${target_element}
 
+    # Prevent screenshot spam during focus polling.
+    ${previous_keyword}=    Register Keyword To Run On Failure    NONE
+
     ${is_focused}=    Run Keyword And Return Status    Element Should Be Focused    ${target_element}
+    Register Keyword To Run On Failure    ${previous_keyword}
+
     RETURN    ${is_focused}
+
 
 # Navigate through the page until the target element receives focus.
 Navigate To Element

@@ -18,23 +18,22 @@ Change Currency Using Keyboard
     
     [tags]  hp01    currency
 
-    Element Should Be Visible        id=logo
+    Element Should Be Visible            id=logo
 
-    Navigate To Element Horizontal             ${CURRENCY_LINK}    @{HEADER_FORWARD_ELEMENTS}
+    Navigate To Element Horizontal       ${CURRENCY_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
-    Wait Until Element Is Visible    ${CURRENCY_MENU} 
-    Navigate To Element Arrow Down             ${EURO}     @{CURRENCY_MENU_ELEMENTS}
+    Wait Until Element Is Visible        ${CURRENCY_MENU} 
+    Navigate To Element Arrow Down       ${EURO}             @{CURRENCY_MENU_ELEMENTS}
     Press Keys    None    ENTER
     Wait Until Element Is Not Visible    ${CURRENCY_MENU}
     
     Press Keys    None    TAB
-    Element Should Be Visible        ${CURRENCY_LINK}
+    Element Should Be Visible            ${CURRENCY_LINK}
     Press Keys    None    ENTER
-    Navigate To Element Arrow Down             ${POUND_STERLING}     @{CURRENCY_MENU_ELEMENTS}
+    Navigate To Element Arrow Down       ${POUND_STERLING}    @{CURRENCY_MENU_ELEMENTS}
     Press Keys    None    ENTER
     Wait Until Element Is Not Visible    ${CURRENCY_MENU}
 
-    Navigate To Element    ${TABLETS_LINK} 
+    Navigate To Element                  ${TABLETS_LINK} 
     Press Keys    None    ENTER
-    Element Should Contain    ${PRODUCT_PRICE}    £
-    
+    Element Should Contain               ${PRODUCT_PRICE}    £
