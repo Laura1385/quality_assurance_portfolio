@@ -18,7 +18,7 @@ Change Currency Using Keyboard
     
     [tags]  hp01    currency
 
-    Element Should Be Visible            id=logo
+    Verify Home Page Loaded
 
     Navigate To Element Horizontal       ${CURRENCY_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER

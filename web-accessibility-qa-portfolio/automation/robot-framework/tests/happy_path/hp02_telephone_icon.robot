@@ -17,7 +17,7 @@ Submit Contact Us Form Using Keyboard
     
     [tags]  hp02    telephone
 
-    Element Should Be Visible            id=logo
+    Verify Home Page Loaded
 
     Navigate To Element Horizontal       ${TELEPHONE_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
