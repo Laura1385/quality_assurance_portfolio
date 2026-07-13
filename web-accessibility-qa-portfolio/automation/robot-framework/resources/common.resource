@@ -1,5 +1,6 @@
 *** Settings ***
 Library         SeleniumLibrary    
+Library         DateTime
 
 *** Variables ***
 ${BASE_URL}    http://localhost:8888
@@ -78,3 +79,9 @@ Navigate To Element
         ${is_focused}=    Is Element Focused    ${target_element}
     END
 
+
+# Generate a unique email address to avoid duplicate registrations
+Generate Unique Registration Email
+    ${email_suffix}=          Get Current Date    result_format=%Y%m%d%H%M%S%f
+    ${registration_email}=    Set Variable        uncle.scrooge${email_suffix}@gmail.com
+    RETURN                    ${registration_email}

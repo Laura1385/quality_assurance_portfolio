@@ -14,8 +14,8 @@ ${POUND_STERLING}           css:form#form-currency ul.dropdown-menu.show a[href=
 ${US_DOLLAR}                css:form#form-currency ul.dropdown-menu.show a[href="USD"]
 ${TABLETS_LINK}             xpath://a[normalize-space(.)='Tablets']
 ${PRODUCT_PRICE}            css:div.price span.price-new
-@{REGISTER}        css:div.text-end div.dropdown a[href*="account/register"]       
-@{LOGIN}           css:div.text-end div.dropdown a[href*="account/login"]   
+@{REGISTER}                 css:div.text-end div.dropdown a[href*="account/register"]       
+@{LOGIN}                    css:div.text-end div.dropdown a[href*="account/login"]   
 
 @{HEADER_FORWARD_ELEMENTS}
 ...    ${CURRENCY_LINK}
