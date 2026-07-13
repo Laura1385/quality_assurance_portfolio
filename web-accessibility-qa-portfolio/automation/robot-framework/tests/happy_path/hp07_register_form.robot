@@ -47,7 +47,7 @@ Complete Register Account Workflow Using Keyboard
 
     Navigate To Element                  input-password
     Input Text                           input-password     Topolino
-    
+
     Navigate To Element                  input-newsletter
     Press Keys    None    SPACE
     Navigate To Element                  css:form#form-register a[href*="information/information.info"]
@@ -72,13 +72,15 @@ Complete Register Account Workflow Using Keyboard
     Wait Until Element Is Visible        css:#information-contact div#content > h1
     Element Text Should Be               css:#information-contact div#content > h1      Contact Us
 
+    Textfield Value Should Be            input-name     Uncle
+    Textfield Value Should Be            input-email    ${test_email}
+
     Navigate To Element                  css:textarea#input-enquiry
     Input Text                           css:textarea#input-enquiry    Lorem ipsum dolor sit amet?
     Navigate To Element                  css:div.text-end > button[type="submit"]
     Press Keys    None    ENTER
-
     Wait Until Element Is Visible        ${ACCOUNT_CREATED_TITLE}
-    Element Text Should Be               ${ACCOUNT_CREATED_TITLE}      Contact Us
+    Element Should Contain               css:#common-success div#content        Your enquiry has been successfully sent to the store owner!
 
     Navigate To Element                  css:div.text-end > a[href*="common/home"]
     Element Text Should Be               css:#common-success div#content > h1      Contact Us
