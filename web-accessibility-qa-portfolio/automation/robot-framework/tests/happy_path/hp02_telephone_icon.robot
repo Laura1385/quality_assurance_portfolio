@@ -2,7 +2,6 @@
 Documentation         Happy Path tests for OpenCart telephone icon interaction.
 Library               SeleniumLibrary
 Resource              ../../resources/common.resource
-Resource              ../../resources/locators.resource
 
 Test Setup            Begin Web Test    
 Test Teardown         End Web Test      

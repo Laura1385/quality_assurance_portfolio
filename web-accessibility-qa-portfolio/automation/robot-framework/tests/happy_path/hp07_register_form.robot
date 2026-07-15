@@ -2,18 +2,13 @@
 Documentation         Happy Path tests for the OpenCart registration form
 Library               SeleniumLibrary
 Resource              ../../resources/common.resource
-Resource              ../../resources/locators.resource
 
 Test Setup            Begin Web Test    
 Test Teardown         End Web Test      
 
 
 # Run from the project root:
-# robot -d automation/robot-framework/results/2_happy_path automation/robot-framework/tests/happy_path/hp07_register_form.robot
-
-*** Variables ***
-${REGISTER_PAGE_TITLE}                  css:#content > h1
-${ACCOUNT_CREATED_TITLE}                css:#common-success div#content > h1
+# robot -d automation/robot-framework/results/2_happy_path automation/robot-framework/tests/happy_path/hp07_register_form.robot1
 
 *** Test Cases ***
 

@@ -1,6 +1,7 @@
 *** Settings ***
 Library         SeleniumLibrary    
 Library         DateTime
+Resource        locators.resource
 
 *** Variables ***
 ${BASE_URL}    http://localhost:8888
@@ -10,7 +11,7 @@ ${BROWSER}     chrome
 # Configure Selenium execution parameters.
 Initialize Selenium
     Set Selenium Speed        .1s               #adds a pause after each command
-    Set Selenium Timeout      10s               #set how long to wait before failing
+    Set Selenium Timeout      7s               #set how long to wait before failing
 
 
 # Open the application before each test.
@@ -85,3 +86,49 @@ Generate Unique Registration Email
     ${email_suffix}=          Get Current Date    result_format=%Y%m%d%H%M%S%f
     ${registration_email}=    Set Variable        uncle.scrooge${email_suffix}@gmail.com
     RETURN                    ${registration_email}
+
+
+# Register a new user for tests requiring an authenticated session
+Register New User
+    ${test_email}=    Generate Unique Registration Email
+
+    Navigate To Element Horizontal    ${MY_ACCOUNT_LINK}    @{HEADER_FORWARD_ELEMENTS}
+    Press Keys    None    ENTER
+
+    Wait Until Element Is Visible    css:div.text-end div.dropdown > ul.dropdown-menu.show
+    Press Keys    None    ENTER
+
+    Navigate To Element Arrow Down    @{REGISTER}    @{MY_ACCOUNT_MENU}
+    Press Keys    None    ENTER
+
+    Input Text    input-firstname     Uncle
+    Input Text    input-lastname      Scrooge
+    Input Text    input-email         ${test_email}
+    Input Text    input-password      Topolino
+
+    Navigate To Element               css:form#form-register input[name="agree"]
+    Press Keys    None    SPACE
+    
+    Press Keys    css:form#form-register button[type="submit"]    ENTER
+
+    Wait Until Element Is Visible    ${ACCOUNT_CREATED_TITLE}
+
+    Wait Until Element Is Visible    ${ACCOUNT_CREATED_TITLE}
+    Element Text Should Be           ${ACCOUNT_CREATED_TITLE}      Your Account Has Been Created!
+
+    Navigate To Element              css:#content div.text-end > a[href*="account/account"]
+    Press Keys    None    ENTER
+
+    Navigate To Element              css:div.container > ul.breadcrumb a[href*="common/home"]
+    Press Keys    None    ENTER
+
+    #RETURN    ${test_email}
+
+
+# Add the first product to the Wish List
+Add Product To Wish List
+
+    Navigate To Element    ${FIRST_PRODUCT_WISHLIST_BUTTON}
+    Press Keys    None    ENTER
+
+    Wait Until Element Contains        css:#alert .alert        Success: You have added
