@@ -21,13 +21,16 @@ Access Wish List Using Keyboard
     
     Navigate To Element Horizontal         ${WISH_LIST_LINK}     @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible          css:#content h2
     Element Text Should Be                 css:#content h2       New Customer
 
-    Navigate To Element                    css:div.container > ul.breadcrumb a[href*="common/home"]  
+    Navigate To Element                    ${BREADCRUMB_HOME_LINK}  
     Press Keys    None    ENTER
-    Wait Until Element Is Visible          css:div.carousel-inner
+
+    Verify Home Page Is Displayed
 
     Navigate To Element                    css:#content div.row > div.col:first-child button[formaction*="account/wishlist"]
     Press Keys    None    ENTER
+
     Wait Until Element Contains            css:#alert .alert    You must login or create an account to save    3s

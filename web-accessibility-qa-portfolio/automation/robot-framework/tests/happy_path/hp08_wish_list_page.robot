@@ -20,8 +20,9 @@ Remove Product from Wish List Using Keyboard
 
     Register New User
     Add Product To Wish List
+    
+    Verify Home Page Is Displayed
 
-    Wait Until Element Is Visible        css:a[href*="common/home"]
     Navigate To Element                  ${WISH_LIST_LINK} 
     Press Keys    None    ENTER
 
@@ -29,15 +30,13 @@ Remove Product from Wish List Using Keyboard
     Element Text Should Be               css:#content h1       My Wishlist
     Navigate To Element                  css:div.d-grid a[href*="remove"]  
     Press Keys    None    ENTER
-    Wait Until Element Contains          css:#alert .alert     Success: You have removed an item from your wishlist
 
+    Wait Until Element Contains          css:#alert .alert     Success: You have removed an item from your wishlist
     Wait Until Element Is Visible        css:#content h1
-    Wait Until Element Contains          css:#content           Your wish list is empty.    3s
+    Wait Until Element Contains          css:#content          Your wish list is empty.    3s
 
     Navigate To Element                  xpath://a[normalize-space(.)="Continue"]
     Press Keys    None    ENTER
     
-    Navigate To Element                  css:div.container > ul.breadcrumb a[href*="common/home"]
-    Press Keys    None    ENTER
-    
-    Wait Until Element Is Visible        css:div.carousel-inner
+    Wait Until Element Is Visible        css:#content h1
+    Wait Until Element Contains          css:#content           My Account    3s

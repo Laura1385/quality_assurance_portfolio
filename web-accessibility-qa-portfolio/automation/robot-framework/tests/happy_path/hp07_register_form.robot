@@ -8,7 +8,7 @@ Test Teardown         End Web Test
 
 
 # Run from the project root:
-# robot -d automation/robot-framework/results/2_happy_path automation/robot-framework/tests/happy_path/hp07_register_form.robot1
+# robot -d automation/robot-framework/results/2_happy_path automation/robot-framework/tests/happy_path/hp07_register_form.robot
 
 *** Test Cases ***
 
@@ -22,11 +22,12 @@ Complete Register Account Workflow Using Keyboard
     Navigate To Element Horizontal       ${MY_ACCOUNT_LINK}     @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
     
-    Wait Until Element Is Visible        css:div.text-end div.dropdown > ul.dropdown-menu.show
+    Wait Until Element Is Visible        ${MY_ACCOUNT_DROPDOWN_MENU}
     Press Keys    None    ENTER
 
     Navigate To Element Arrow Down       @{REGISTER}            @{MY_ACCOUNT_MENU}    
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible        ${REGISTER_PAGE_TITLE}
     Element Text Should Be               ${REGISTER_PAGE_TITLE}      Register Account
 
@@ -45,16 +46,18 @@ Complete Register Account Workflow Using Keyboard
 
     Navigate To Element                  input-newsletter
     Press Keys    None    SPACE
+
     Navigate To Element                  css:form#form-register a[href*="information/information.info"]
     Press Keys    None    ENTER
+
     Navigate To Element                  css:div.modal-header > button[type="button"]
     Press Keys    None    ENTER
    
     Wait Until Element Is Visible        ${REGISTER_PAGE_TITLE}
     Element Text Should Be               ${REGISTER_PAGE_TITLE}      Register Account
 
-    Navigate To Element                  css:form#form-register input[name="agree"]
-    Press Keys    None    SPACE
+    Accept Privacy Policy
+
     Navigate To Element                  css:form#form-register button[type="submit"]
     Press Keys    None    ENTER
     
@@ -72,13 +75,14 @@ Complete Register Account Workflow Using Keyboard
 
     Navigate To Element                  css:textarea#input-enquiry
     Input Text                           css:textarea#input-enquiry    Lorem ipsum dolor sit amet?
-    Navigate To Element                  css:div.text-end > button[type="submit"]
+    Navigate To Element                  ${CONTACT_US_SUBMIT_BUTTON}
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible        ${ACCOUNT_CREATED_TITLE}
     Element Should Contain               css:#common-success div#content        Your enquiry has been successfully sent to the store owner!
 
-    Navigate To Element                  css:div.text-end > a[href*="common/home"]
+    Navigate To Element                  ${CONTACT_US_CONTINUE_LINK}
     Element Text Should Be               css:#common-success div#content > h1      Contact Us
     Press Keys    None    ENTER
 
-    Wait Until Element Is Visible        css:div.carousel-inner
+    Verify Home Page Is Displayed

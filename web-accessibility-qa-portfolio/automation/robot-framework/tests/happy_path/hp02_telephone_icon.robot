@@ -20,21 +20,22 @@ Submit Contact Us Form Using Keyboard
 
     Navigate To Element Horizontal       ${TELEPHONE_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible        xpath://main//h1[normalize-space(.)='Contact Us']
     
     Navigate To Element                  id:input-name
-    Input Text                           id:input-name    Test One
+    Input Text                           id:input-name        Test One
    
     Navigate To Element                  id:input-email
-    Input Text                           id:input-email    test.one@test.com
+    Input Text                           id:input-email       test.one@test.com
 
     Navigate To Element                  id:input-enquiry
-    Input Text                           id:input-enquiry    Lorem ipsum dolor sit amet?
+    Input Text                           id:input-enquiry     Lorem ipsum dolor sit amet?
 
-    Navigate To Element                  css:div.text-end > button[type="submit"]
-    Click Button                         css:div.text-end > button[type="submit"]
+    Navigate To Element                  ${CONTACT_US_SUBMIT_BUTTON} 
+    Click Button                         ${CONTACT_US_SUBMIT_BUTTON} 
 
-    Navigate To Element                  css:div.text-end > a[href*="route=common/home"]
-    Click Link                           css:div.text-end > a[href*="route=common/home"]
+    Navigate To Element                  ${CONTACT_US_CONTINUE_LINK}
+    Click Link                           ${CONTACT_US_CONTINUE_LINK}
 
-    Location Should Contain              route=common/home
+    Verify Home Page Is Displayed

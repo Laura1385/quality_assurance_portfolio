@@ -10,9 +10,6 @@ Test Teardown         End Web Test
 # Run from the project root:
 # robot -d automation/robot-framework/results/2_happy_path automation/robot-framework/tests/happy_path/hp05_shopping_cart.robot
 
-*** Variables ***
-${SHOPPING_CART_TITLE}    css:#shopping-cart h1
-
 *** Test Cases ***
 Access Shopping Cart Using Keyboard
     [Documentation]  Verify that a keyboard user can navigate to the Shopping Cart page,
@@ -24,9 +21,11 @@ Access Shopping Cart Using Keyboard
     
     Navigate To Element Horizontal         ${SHOPPING_CART_LINK}     @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible          ${SHOPPING_CART_TITLE}
     Element Text Should Be                 ${SHOPPING_CART_TITLE}    Shopping Cart
 
-    Navigate To Element                    css:#shopping-cart div.text-end a[href*="common/home"]  
+    Navigate To Element                    ${SHOPPING_CART_CONTINUE_LINK}  
     Press Keys    None    ENTER
-    Wait Until Element Is Visible          css:div.carousel-inner
+
+    Verify Home Page Is Displayed

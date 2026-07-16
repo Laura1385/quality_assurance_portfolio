@@ -19,6 +19,15 @@ ${PRODUCT_PRICE}                    css:div.price span.price-new
 ${REGISTER_PAGE_TITLE}              css:#content > h1
 ${ACCOUNT_CREATED_TITLE}            css:#common-success div#content > h1
 ${FIRST_PRODUCT_WISHLIST_BUTTON}    css:#content div.row > div.col:first-child button[formaction*="account/wishlist"]
+${SHOPPING_CART_TITLE}              css:#shopping-cart h1
+${SHOPPING_CART_CONTINUE_LINK}      css:#shopping-cart div.text-end a[href*="common/home"]
+${HOME_PAGE_CAROUSEL}               css:div.carousel-inner
+${BREADCRUMB_HOME_LINK}             css:div.container > ul.breadcrumb a[href*="common/home"]
+${MY_ACCOUNT_DROPDOWN_MENU}         css:div.text-end div.dropdown > ul.dropdown-menu.show
+${CONTACT_US_SUBMIT_BUTTON}         css:div.text-end > button[type="submit"]
+${CONTACT_US_CONTINUE_LINK}         css:div.text-end > a[href*="common/home"]
+${REGISTER_PRIVACY_POLICY_SWITCH}   css:form#form-register input[name="agree"]
+
 
 @{HEADER_FORWARD_ELEMENTS}
 ...    ${CURRENCY_LINK}

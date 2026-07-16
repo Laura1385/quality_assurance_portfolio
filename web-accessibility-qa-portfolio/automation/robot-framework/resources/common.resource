@@ -81,6 +81,12 @@ Navigate To Element
     END
 
 
+# Accept the Privacy Policy
+Accept Privacy Policy
+    Navigate To Element    ${REGISTER_PRIVACY_POLICY_SWITCH}
+    Press Keys             None    SPACE
+
+
 # Generate a unique email address to avoid duplicate registrations
 Generate Unique Registration Email
     ${email_suffix}=          Get Current Date    result_format=%Y%m%d%H%M%S%f
@@ -95,7 +101,7 @@ Register New User
     Navigate To Element Horizontal    ${MY_ACCOUNT_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
 
-    Wait Until Element Is Visible    css:div.text-end div.dropdown > ul.dropdown-menu.show
+    Wait Until Element Is Visible     ${MY_ACCOUNT_DROPDOWN_MENU}
     Press Keys    None    ENTER
 
     Navigate To Element Arrow Down    @{REGISTER}    @{MY_ACCOUNT_MENU}
@@ -106,8 +112,7 @@ Register New User
     Input Text    input-email         ${test_email}
     Input Text    input-password      Topolino
 
-    Navigate To Element               css:form#form-register input[name="agree"]
-    Press Keys    None    SPACE
+    Accept Privacy Policy
     
     Press Keys    css:form#form-register button[type="submit"]    ENTER
 
@@ -119,7 +124,7 @@ Register New User
     Navigate To Element              css:#content div.text-end > a[href*="account/account"]
     Press Keys    None    ENTER
 
-    Navigate To Element              css:div.container > ul.breadcrumb a[href*="common/home"]
+    Navigate To Element              ${BREADCRUMB_HOME_LINK} 
     Press Keys    None    ENTER
 
     #RETURN    ${test_email}
@@ -132,3 +137,8 @@ Add Product To Wish List
     Press Keys    None    ENTER
 
     Wait Until Element Contains        css:#alert .alert        Success: You have added
+
+
+# Verify the OpenCart home page is displayed
+Verify Home Page Is Displayed
+    Wait Until Element Is Visible    ${HOME_PAGE_CAROUSEL}

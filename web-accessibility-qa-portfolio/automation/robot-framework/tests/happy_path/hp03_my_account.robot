@@ -21,17 +21,18 @@ Access Register And Login Pages Using Keyboard
     Navigate To Element Horizontal       ${MY_ACCOUNT_LINK}     @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
     
-    Wait Until Element Is Visible        css:div.text-end div.dropdown > ul.dropdown-menu.show
+    Wait Until Element Is Visible        ${MY_ACCOUNT_DROPDOWN_MENU}
     Press Keys    None    ENTER
 
     Navigate To Element Arrow Down       @{REGISTER}            @{MY_ACCOUNT_MENU}    
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible        css:#content > h1
     Element Text Should Be               css:#content > h1      Register Account
 
     Navigate To Element Horizontal       ${MY_ACCOUNT_LINK}     @{HEADER_FORWARD_ELEMENTS}
-
     Navigate To Element Arrow Down       @{LOGIN}               @{MY_ACCOUNT_MENU}    
     Press Keys    None    ENTER
+
     Wait Until Element Is Visible        css:#content h2
     Element Text Should Be               css:#content h2        New Customer
