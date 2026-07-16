@@ -29,7 +29,11 @@ services:
   # OpenCart Application
   # ==========================
   opencart:
-    image: ghcr.io/aam-git/docker-opencart:latest
+    build:
+      context: ./docker/opencart
+      dockerfile: Dockerfile
+
+    image: web-accessibility-qa-opencart:4.1.0.3-patched
     platform: linux/amd64
     container_name: opencart-app
 
