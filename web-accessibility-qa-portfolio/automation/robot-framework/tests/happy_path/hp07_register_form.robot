@@ -13,7 +13,8 @@ Test Teardown         End Web Test
 *** Test Cases ***
 
 Complete Register Account Workflow Using Keyboard
-    [Documentation]  Verify that a keyboard user can successfully complete the Register Account workflow using only the keyboard.
+    [Documentation]    Verify that a keyboard user can successfully complete the account registration workflow 
+    ...    and submit a support enquiry from the registration confirmation page.
     
     [tags]  hp07    register_form
 
