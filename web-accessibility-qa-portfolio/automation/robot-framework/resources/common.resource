@@ -33,9 +33,18 @@ Verify Home Page Loaded
 # Move the keyboard focus through a list using Tab.
 Navigate To Element Horizontal
     [Arguments]    ${target_element}    @{elements}
+
+    ${target_is_focused}=    Run Keyword And Return Status
+    ...    Element Should Be Focused    ${target_element}
+
+    IF    ${target_is_focused}
+        RETURN
+    END
+
     FOR    ${element}    IN    @{elements}
         Press Keys    None    TAB
         Element Should Be Focused    ${element}
+
         IF    '${element}' == '${target_element}'
             BREAK
         END
