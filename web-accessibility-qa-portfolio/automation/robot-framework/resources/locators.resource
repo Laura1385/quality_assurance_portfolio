@@ -27,6 +27,7 @@ ${MY_ACCOUNT_DROPDOWN_MENU}         css:div.text-end div.dropdown > ul.dropdown-
 ${CONTACT_US_SUBMIT_BUTTON}         css:div.text-end > button[type="submit"]
 ${CONTACT_US_CONTINUE_LINK}         css:div.text-end > a[href*="common/home"]
 ${REGISTER_PRIVACY_POLICY_SWITCH}   css:form#form-register input[name="agree"]
+${PRIVACY_MODAL_CLOSE_BUTTON}       css:div.modal-header > button[type="button"]
 
 
 @{HEADER_FORWARD_ELEMENTS}

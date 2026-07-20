@@ -51,9 +51,12 @@ Complete Register Account Workflow Using Keyboard
     Navigate To Element                  css:form#form-register a[href*="information/information.info"]
     Press Keys    None    ENTER
 
-    Navigate To Element                  css:div.modal-header > button[type="button"]
-    Press Keys    None    ENTER
-   
+    Wait Until Element Is Visible        ${PRIVACY_MODAL_CLOSE_BUTTON}
+    Navigate To Element                  ${PRIVACY_MODAL_CLOSE_BUTTON}
+    Press Keys                           None    ENTER
+
+    Wait Until Element Is Not Visible    ${PRIVACY_MODAL_CLOSE_BUTTON}
+
     Wait Until Element Is Visible        ${REGISTER_PAGE_TITLE}
     Element Text Should Be               ${REGISTER_PAGE_TITLE}      Register Account
 
