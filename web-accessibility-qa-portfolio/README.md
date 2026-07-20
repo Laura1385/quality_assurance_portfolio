@@ -7,7 +7,8 @@ The project combines:
 - accessibility-oriented validation
 - test management workflow
 - bug reporting activities
-- progressive automation experimentation
+- UI test automation
+- CI integration
 
 The objective is to simulate a realistic QA workflow starting from test analysis and manual testing, then progressively extending toward automation and CI-based execution.
 
@@ -66,11 +67,13 @@ flowchart TD
 
     D --> E[Robot Framework + Selenium Automation]
 
-    E --> F[GitHub Actions CI]
+    E --> F[Local Docker Test Environment]
 
-    F --> G[Playwright UI Testing]
+    F --> G[GitHub Actions CI]
 
-    G --> H[Playwright API Testing]
+    G --> H[Playwright UI Testing]
+
+    H --> I[Playwright API Testing]
 ```
 
 ## Current Status
@@ -80,9 +83,10 @@ flowchart TD
 | Smoke Test Cases              | ✅ Completed      |
 | Happy Path Test Cases         | ✅ Completed      |
 | Exploratory Testing           | ✅ Completed      |
-| Squash TM Organization        | ✅ Completed    |
-| Jira Bug Reporting            | 🔍 If Relevant Findings Emerge        |
-| Robot Framework + Selenium    | 🔄 In Progress        |
-| GitHub Actions CI             | ⏳ Planned        |
+| Squash TM Organization        | ✅ Completed      |
+| Jira Bug Reporting            | 🔍 If Relevant Findings Emerge    |
+| Robot Framework + Selenium    | ✅ Completed      |
+| Local Docker Test Environment | ✅ Completed      |
+| GitHub Actions CI             | 🔄 In Progress    |
 | Playwright UI Testing         | ⏳ Planned        |
 | Playwright API Testing        | ⏳ Planned        |
