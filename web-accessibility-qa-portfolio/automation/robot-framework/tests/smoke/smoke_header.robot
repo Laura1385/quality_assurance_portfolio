@@ -16,6 +16,8 @@ Header Toolbar Is Keyboard Accessible
     [Documentation]  Verify that header toolbar elements are reachable with Tab
     ...              and that Shift+Tab follows the same navigation order in reverse.
 
+    [tags]  smoke header_navigation
+
     Element Should Be Visible        id=logo
     FOR    ${element}    IN    @{HEADER_FORWARD_ELEMENTS}
         Press Keys    None    TAB

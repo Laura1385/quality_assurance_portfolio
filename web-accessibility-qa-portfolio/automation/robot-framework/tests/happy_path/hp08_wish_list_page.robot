@@ -14,7 +14,7 @@ Test Teardown         End Web Test
 Remove Product from Wish List Using Keyboard
     [Documentation]  Verify that a logged-in user can remove a product from the Wish List using the keyboard.
     
-    [tags]  hp08    wish_list_page
+    [tags]  happy_path wishlist_page
 
     Verify Home Page Loaded
 

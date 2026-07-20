@@ -15,7 +15,7 @@ Change Currency Using Keyboard
     [Documentation]  Verify that a keyboard user can change the website currency 
     ...              and that the selected currency remains applied during navigation.
     
-    [tags]  hp01    currency
+    [tags]  happy_path currency
 
     Verify Home Page Loaded
 

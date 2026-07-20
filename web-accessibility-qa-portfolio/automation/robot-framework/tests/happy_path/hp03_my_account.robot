@@ -14,7 +14,7 @@ Test Teardown         End Web Test
 Access Register And Login Pages Using Keyboard
     [Documentation]  Verify that a keyboard user can access the Register and Login pages through the My Account menu.
     
-    [tags]  hp03    my_account
+    [tags]  happy_path account
 
     Verify Home Page Loaded
 

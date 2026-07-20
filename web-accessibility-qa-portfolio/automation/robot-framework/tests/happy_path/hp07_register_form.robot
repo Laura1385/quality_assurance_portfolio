@@ -16,7 +16,7 @@ Complete Register Account Workflow Using Keyboard
     [Documentation]    Verify that a keyboard user can successfully complete the account registration workflow 
     ...    and submit a support enquiry from the registration confirmation page.
     
-    [tags]  hp07    register_form
+    [tags]  happy_path registration
 
     Verify Home Page Loaded
 

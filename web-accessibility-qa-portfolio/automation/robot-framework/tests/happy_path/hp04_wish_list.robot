@@ -15,7 +15,7 @@ Access Wish List Using Keyboard
     [Documentation]  Verify that a guest user is redirected to the login page 
     ...    when attempting to add a product to the Wish List using the keyboard.
     
-    [tags]  hp04    wish_list
+    [tags]  happy_path wishlist
 
     Verify Home Page Loaded
     

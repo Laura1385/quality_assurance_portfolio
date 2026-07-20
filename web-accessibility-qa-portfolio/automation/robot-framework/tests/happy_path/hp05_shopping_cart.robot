@@ -15,7 +15,7 @@ Access Shopping Cart Using Keyboard
     [Documentation]  Verify that a keyboard user can navigate to the Shopping Cart page,
     ...     through the Shopping Cart icon, and return to the Home page.
     
-    [tags]  hp05    shopping_cart
+    [tags]  happy_path shopping_cart
 
     Verify Home Page Loaded
     

@@ -14,7 +14,7 @@ Test Teardown         End Web Test
 Submit Contact Us Form Using Keyboard
     [Documentation]  Verify that a keyboard user can successfully submit the Contact Us form.
     
-    [tags]  hp02    telephone
+    [tags]  happy_path telephone
 
     Verify Home Page Loaded
 

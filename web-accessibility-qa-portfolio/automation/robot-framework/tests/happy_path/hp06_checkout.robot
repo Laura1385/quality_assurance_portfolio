@@ -16,7 +16,7 @@ Access Checkout Using Keyboard
     [Documentation]    Verify that a keyboard user is redirected to the Shopping Cart page
     ...                when activating the Checkout icon with an empty cart, and can return to the Home page.
     
-    [tags]  hp06    checkout
+    [tags]  happy_path checkout
 
     Verify Home Page Loaded
     
