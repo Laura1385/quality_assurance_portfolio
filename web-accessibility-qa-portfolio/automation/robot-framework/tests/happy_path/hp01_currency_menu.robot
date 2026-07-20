@@ -27,11 +27,13 @@ Change Currency Using Keyboard
     Press Keys    None    ENTER
    
     Wait Until Element Is Not Visible    ${CURRENCY_MENU}
-    Press Keys    None    TAB
-    Element Should Be Visible            ${CURRENCY_LINK}
+    Wait Until Page Contains Element     ${TABLETS_LINK}
+    Wait Until Element Is Visible        ${CURRENCY_LINK}
+
+    Navigate To Element Horizontal       ${CURRENCY_LINK}    @{HEADER_FORWARD_ELEMENTS}
     Press Keys    None    ENTER
 
-    Navigate To Element Arrow Down       ${POUND_STERLING}    @{CURRENCY_MENU_ELEMENTS}
+    Navigate To Element Arrow Down       ${POUND_STERLING}   @{CURRENCY_MENU_ELEMENTS}
     Press Keys    None    ENTER
    
     Wait Until Element Is Not Visible    ${CURRENCY_MENU}
