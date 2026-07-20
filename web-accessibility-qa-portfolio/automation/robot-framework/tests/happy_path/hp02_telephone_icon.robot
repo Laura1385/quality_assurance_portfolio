@@ -33,9 +33,9 @@ Submit Contact Us Form Using Keyboard
     Input Text                           id:input-enquiry     Lorem ipsum dolor sit amet?
 
     Navigate To Element                  ${CONTACT_US_SUBMIT_BUTTON} 
-    Click Button                         ${CONTACT_US_SUBMIT_BUTTON} 
+    Press Keys    None    ENTER
 
     Navigate To Element                  ${CONTACT_US_CONTINUE_LINK}
-    Click Link                           ${CONTACT_US_CONTINUE_LINK}
+    Press Keys    None    ENTER
 
     Verify Home Page Is Displayed
