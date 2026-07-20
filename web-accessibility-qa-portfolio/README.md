@@ -54,6 +54,8 @@ To provide a stable and repeatable test environment, the project was migrated to
 The complete Docker setup is documented in:
 - `docs/docker-local-environment.md`
 
+The migration took place during the UI automation phase after identifying limitations in the public demo environment.
+
 ## Project Roadmap
 ```mermaid
 flowchart TD
@@ -67,13 +69,11 @@ flowchart TD
 
     D --> E[Robot Framework + Selenium Automation]
 
-    E --> F[Local Docker Test Environment]
+    E --> F[GitHub Actions CI]
 
-    F --> G[GitHub Actions CI]
+    F --> G[Playwright UI Testing]
 
-    G --> H[Playwright UI Testing]
-
-    H --> I[Playwright API Testing]
+    G --> H[Playwright API Testing]
 ```
 
 ## Current Status

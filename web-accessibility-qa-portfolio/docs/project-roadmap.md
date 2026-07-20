@@ -49,17 +49,7 @@ Status: ✅ Completed
 
 ---
 
-## Phase 6 — Local Docker Test Environment
-- Investigation of public demo environment limitations
-- Migration to a stable local OpenCart environment
-- Reproducible application and database setup
-- Validation of automated tests in the local environment
-
-Status: ✅ Completed
-
----
-
-## Phase 7 — CI Integration
+## Phase 6 — CI Integration
 - GitHub Actions workflow
 - Automated test execution
 - Test report generation
@@ -68,7 +58,7 @@ Status: 🔄 In Progress
 
 ---
 
-## Phase 8 — Playwright Exploration
+## Phase 7 — Playwright Exploration
 - Playwright UI automation experiments
 - Keyboard interaction validation
 - Framework comparison activities
@@ -77,7 +67,7 @@ Status: ⏳ Planned
 
 ---
 
-## Phase 9 — API Testing with Playwright
+## Phase 8 — API Testing with Playwright
 - Basic API validation workflows
 - Response verification
 - UI/API workflow integration experiments
