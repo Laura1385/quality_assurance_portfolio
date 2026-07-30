@@ -6,19 +6,19 @@ Resource        locators.resource
 *** Variables ***
 ${BASE_URL}           http://localhost:8888
 ${BROWSER}            chrome
-${BROWSER_OPTIONS}    NONE
+${BROWSER_OPTIONS}    ${NONE}
 
 *** Keywords ***
 # Configure Selenium execution parameters.
 Initialize Selenium
-    Set Selenium Speed        .1s               #adds a pause after each command
-    Set Selenium Timeout      7s               #set how long to wait before failing
+    Set Selenium Speed       .1s               #adds a pause after each command
+    Set Selenium Timeout     7s                #set how long to wait before failing
 
 
 # Open the application before each test.
 Begin Web Test
     Initialize Selenium
-    Open Browser              ${BASE_URL}    ${BROWSER}    options=${BROWSER_OPTIONS}
+    Open Browser              ${BASE_URL}    ${BROWSER}  options=${BROWSER_OPTIONS}
     Maximize Browser Window
 
 
