@@ -19,8 +19,6 @@ Initialize Selenium
 Begin Web Test
     Initialize Selenium
     Open Browser              ${BASE_URL}    ${BROWSER}  options=${BROWSER_OPTIONS}
-    Maximize Browser Window
-
 
 # Close the browser after each test.
 End Web Test
