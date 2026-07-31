@@ -11,6 +11,7 @@ Initially, GitHub Actions was configured to execute the Robot Framework test sui
 This provided immediate feedback about test failures, but it did not prevent unstable code from reaching the main branch.
 As a result, the CI pipeline acted as a notification mechanism rather than as a protection mechanism.
 
+```text
 Developer
      │
 git push main
@@ -24,6 +25,7 @@ GitHub Actions
           │
           ▼
     Broken code may already be in main
+```
 
 ## Why GitHub Actions Alone Was Not Enough
 GitHub Actions automatically executes the test suite and reports the outcome of each execution.
@@ -40,6 +42,7 @@ The objective was to ensure that automated tests became a mandatory validation s
 
 To achieve this, the repository workflow was updated by combining feature branches, pull requests, branch protection rules and required status checks.
 
+```text
 Developer
      │
      ▼
@@ -60,6 +63,7 @@ GitHub Actions
  │        │
  ▼        ▼
 Merge   Merge blocked
+```
 
 ### Repository Configuration
 The repository was configured to ensure that every change is validated before it can be merged into the main branch.
@@ -91,6 +95,7 @@ The resulting workflow consists of the following steps:
 5. Automatically execute the Robot Framework test suite through GitHub Actions.
 6. Merge the pull request only after all required status checks have passed.
 
+```text
 Feature Branch
        │
        ▼
@@ -107,7 +112,8 @@ Pull Request ─────────► GitHub Actions
          successful checks
                  │
                  ▼
-               Main
+                Main
+```
 
 ## Benefits
 
