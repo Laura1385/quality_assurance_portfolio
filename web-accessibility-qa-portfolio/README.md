@@ -9,8 +9,9 @@ The project combines:
 - bug reporting activities
 - UI test automation
 - CI integration
+- API testing
 
-The objective is to simulate a realistic QA workflow starting from test analysis and manual testing, then progressively extending toward automation and CI-based execution.
+The objective is to simulate a realistic QA workflow starting from test analysis and manual testing, progressively extending toward UI automation, CI-based execution and API testing.
 
 ## Project Scope
 The project currently focuses on keyboard accessibility validation for selected user flows within the OpenCart demo website.
@@ -71,9 +72,9 @@ flowchart TD
 
     E --> F[GitHub Actions CI]
 
-    F --> G[Playwright UI Testing]
+    F --> G[API Testing with Bruno]
 
-    G --> H[Playwright API Testing]
+    G --> H[Playwright Exploration]
 ```
 
 ## Current Status
@@ -87,6 +88,6 @@ flowchart TD
 | Jira Bug Reporting            | 🔍 If Relevant Findings Emerge    |
 | Robot Framework + Selenium    | ✅ Completed      |
 | Local Docker Test Environment | ✅ Completed      |
-| GitHub Actions CI             | 🔄 In Progress    |
-| Playwright UI Testing         | ⏳ Planned        |
-| Playwright API Testing        | ⏳ Planned        |
+| GitHub Actions CI             | ✅ Completed      |
+| API Testing with Bruno        | 🔄 In Progress    |
+| Playwright Exploration        | ⏳ Future Exploration |
