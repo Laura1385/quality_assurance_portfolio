@@ -54,22 +54,26 @@ Status: ✅ Completed
 - Automated test execution
 - Test report generation
 
+Status: ✅ Completed
+
+---
+
+## Phase 7 — API Testing with Bruno
+- REST API fundamentals
+- API collection organization
+- Request and response validation
+- HTTP methods and status codes
+- Authentication and environment variables
+- Automated API test execution
+
 Status: 🔄 In Progress
 
 ---
 
-## Phase 7 — Playwright Exploration
-- Playwright UI automation experiments
+## Phase 8 — Playwright Exploration
+- Basic Playwright UI automation experiments
 - Keyboard interaction validation
-- Framework comparison activities
+- Framework comparison with Robot Framework and Selenium
+- Optional UI/API workflow integration experiments
 
-Status: ⏳ Planned
-
----
-
-## Phase 8 — API Testing with Playwright
-- Basic API validation workflows
-- Response verification
-- UI/API workflow integration experiments
-
-Status: ⏳ Planned
+Status: ⏳ Future Exploration
