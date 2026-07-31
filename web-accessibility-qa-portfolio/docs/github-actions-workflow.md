@@ -1,4 +1,4 @@
-# GitHub Actions CI
+# GitHub Actions Workflow for OpenCart
 
 ## Purpose
 The GitHub Actions workflow automatically executes the Robot Framework test suite in a clean and reproducible environment.
@@ -74,6 +74,11 @@ Local reports remain in:
 `automation/robot-framework/results/`
 
 ## Current Status
-The workflow has been successfully validated.
-
 The complete Robot Framework test suite executes successfully in GitHub Actions using Docker, headless Chrome and artifact publication for test reports.
+
+The workflow has been validated through multiple successful executions.
+
+## Related Documentation
+This document focuses on the technical implementation of the GitHub Actions workflow.
+
+The Continuous Integration workflow, branch protection strategy, pull request process and quality gate configuration are documented in `docs/ci-cd-workflow.md`.
