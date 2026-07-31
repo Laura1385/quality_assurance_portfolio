@@ -57,6 +57,7 @@ jobs:
         working-directory: ${{ env.OPENCART_PROJECT_PATH }}/automation/robot-framework
         run: |
           robot \
+            -v HEADLESS:True \
             -v BROWSER_OPTIONS:"add_argument('--headless=new');add_argument('--window-size=1366,768');add_argument('--no-sandbox');add_argument('--disable-dev-shm-usage')" \
             -d results/ci-reports \
             tests

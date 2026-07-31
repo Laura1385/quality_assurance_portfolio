@@ -7,12 +7,17 @@ Resource        locators.resource
 ${BASE_URL}           http://localhost:8888
 ${BROWSER}            chrome
 ${BROWSER_OPTIONS}    ${NONE}
+${HEADLESS}           False
+${SELENIUM_SPEED}     .1s                      # adds a delay after each Selenium keyword (local debugging only)
 
 *** Keywords ***
 # Configure Selenium execution parameters.
 Initialize Selenium
-    Set Selenium Speed       .1s               #adds a pause after each command
-    Set Selenium Timeout     7s                #set how long to wait before failing
+    IF    not ${HEADLESS}
+        Set Selenium Speed    ${SELENIUM_SPEED}
+    END
+
+    Set Selenium Timeout     7s                # set how long to wait before failing
 
 
 # Open the application before each test.
